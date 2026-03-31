@@ -7,7 +7,7 @@ const nextConfig = {
     unoptimized: true,
   },
   // Descomentado para GitHub Pages
-  basePath: '/nexo',
+  basePath: '/proyectos',
 };
 
 export default nextConfig;
