@@ -21,6 +21,12 @@
   color: var(--foreground);
 }
 
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}
+
 .sectionSubtitle {
   font-size: 1rem;
   color: #888;
@@ -32,7 +38,7 @@
 
 .categoriesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
   gap: 30px;
   grid-auto-rows: 280px;
   /* Square/Card aspect ratio */
@@ -66,12 +72,38 @@
 .featuredHeader {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .featuredHeader {
+    align-items: flex-start;
+  }
 }
 
 .featuredGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
   gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .categoriesSection {
+    padding: 60px 16px;
+  }
+  .featuredSection {
+    padding: 60px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categoriesGrid {
+    grid-auto-rows: 240px;
+  }
+  .featuredGrid {
+    gap: 20px;
+  }
 }

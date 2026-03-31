@@ -27,20 +27,41 @@
     </div>
 
     <!-- TopAppBar -->
-    <nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-md flex justify-between items-center px-4 md:px-10 py-6 border-b border-[#8E90A2]/10 transition-all">
+    <nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-md flex justify-between items-center px-4 md:px-10 py-4 md:py-6 border-b border-[#8E90A2]/10 transition-all">
         <a href="index.html" class="text-2xl md:text-3xl font-black italic tracking-tighter text-[#2E5BFF] font-['Space_Grotesk'] uppercase hover:scale-105 transition-transform">
             KINETIC VOID
         </a>
-        <div class="hidden md:flex gap-8 items-center">
+        <div class="hidden lg:flex gap-8 items-center">
             <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="entrenamiento.html">ENTRENAMIENTO</a>
             <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="membresias.html">MEMBRESÍAS</a>
             <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="filosofia.html">FILOSOFÍA</a>
             <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="sedes.html">SEDES</a>
         </div>
-        <a href="membresias.html" class="bg-[#2E5BFF] text-white px-4 md:px-6 py-2 font-['Space_Grotesk'] font-bold uppercase tracking-tighter kinetic-glow active:scale-95 transition-all text-sm md:text-base">
-            ÚNETE AL VACÍO
-        </a>
+        <div class="flex items-center gap-4">
+            <a href="membresias.html" class="hidden md:inline-block bg-[#2E5BFF] text-white px-4 md:px-6 py-2 font-['Space_Grotesk'] font-bold uppercase tracking-tighter kinetic-glow active:scale-95 transition-all text-sm md:text-base">
+                ÚNETE AL VACÍO
+            </a>
+            <button id="mobile-menu-btn" class="lg:hidden text-white flex items-center justify-center p-2">
+                <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">menu</span>
+            </button>
+        </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-[#0E0E0E] z-[60] flex flex-col items-center justify-center gap-8 translate-x-full transition-transform duration-500 ease-in-out">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-white p-2">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <a class="font-['Space_Grotesk'] text-3xl uppercase tracking-tighter font-bold text-white hover:text-[#2E5BFF] transition-colors" href="index.html">INICIO</a>
+        <a class="nav-link font-['Space_Grotesk'] text-3xl uppercase tracking-tighter font-bold text-white hover:text-[#2E5BFF] transition-colors" href="entrenamiento.html">ENTRENAMIENTO</a>
+        <a class="nav-link font-['Space_Grotesk'] text-3xl uppercase tracking-tighter font-bold text-white hover:text-[#2E5BFF] transition-colors" href="membresias.html">MEMBRESÍAS</a>
+        <a class="nav-link font-['Space_Grotesk'] text-3xl uppercase tracking-tighter font-bold text-white hover:text-[#2E5BFF] transition-colors" href="filosofia.html">FILOSOFÍA</a>
+        <a class="nav-link font-['Space_Grotesk'] text-3xl uppercase tracking-tighter font-bold text-white hover:text-[#2E5BFF] transition-colors" href="sedes.html">SEDES</a>
+        <a href="membresias.html" class="mt-8 bg-[#2E5BFF] text-white px-8 py-4 font-['Space_Grotesk'] font-bold uppercase tracking-tighter kinetic-glow relative overflow-hidden group">
+            <span class="relative z-10">ÚNETE AL VACÍO</span>
+            <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+        </a>
+    </div>
 
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-start pt-20 overflow-hidden">
@@ -64,11 +85,11 @@
                 No entrenamos cuerpos. Diseñamos arquitectura cinética. El vacío no es el final, es el espacio donde te reconstruyes bajo presión absoluta.
             </p>
             
-            <div class="flex flex-wrap gap-4">
-                <a href="entrenamiento.html" class="bg-primary-container text-white px-10 py-5 font-headline font-black text-xl uppercase tracking-tighter kinetic-glow inline-block">
+            <div class="flex flex-col md:flex-row flex-wrap gap-4">
+                <a href="entrenamiento.html" class="bg-primary-container text-white px-10 py-5 font-headline font-black text-xl uppercase tracking-tighter kinetic-glow inline-block w-full text-center md:w-auto">
                     INICIAR SECUENCIA
                 </a>
-                <a href="sedes.html" class="border border-outline/30 text-white px-10 py-5 font-headline font-black text-xl uppercase tracking-tighter hover:bg-white/5 transition-all inline-block">
+                <a href="sedes.html" class="border border-outline/30 text-white px-10 py-5 font-headline font-black text-xl uppercase tracking-tighter hover:bg-white/5 transition-all inline-block w-full text-center md:w-auto">
                     VER MÓDULOS
                 </a>
             </div>
@@ -76,12 +97,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#0E0E0E] flex flex-col md:flex-row justify-between items-center px-10 py-12 w-full border-t border-[#8E90A2]/15">
-        <div class="mb-8 md:mb-0 reveal-left">
+    <footer class="bg-[#0E0E0E] flex flex-col lg:flex-row justify-between items-center text-center lg:text-left px-6 md:px-10 py-12 w-full border-t border-[#8E90A2]/15 gap-8 lg:gap-0">
+        <div class="reveal-left">
             <div class="text-lg font-bold text-[#2E5BFF] font-headline uppercase tracking-tighter mb-2">KINETIC VOID</div>
             <p class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2]">© 2024 KINETIC VOID // SYSTEM_ACTIVE</p>
         </div>
-        <div class="flex flex-wrap justify-center gap-8 reveal-right">
+        <div class="flex flex-wrap justify-center gap-6 md:gap-8 reveal-right">
             <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">INSTAGRAM</a>
             <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">SPOTIFY</a>
             <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">TIKTOK</a>

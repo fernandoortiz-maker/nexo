@@ -71,15 +71,88 @@
                     style="font-family: var(--font-heading); background: var(--color-accent); padding: 5px 15px; border-radius: 20px; font-weight: bold; margin-bottom: 1rem; display: inline-block;">¡Nueva
                     temporada de Mango! 🥭</span>
                 <h1 style="margin-top: 1rem;">La Felicidad en forma<br><span style="color: var(--color-primary);">de
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="description"
+        content="IceCreamy - Las mejores paletas artesanales hechas con fruta 100% natural. Eventos, mayoreo y más.">
+    <meta name="keywords" content="paletas, helados, artesanal, natural, eventos, mayoreo">
+    <meta name="author" content="IceCreamy">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IceCreamy | La Mejor Paletería</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Outfit:wght@300;400;700&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Barra decorativa superior -->
+    <div class="header-top-bar"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container flex-between">
+            <a href="index.html" class="logo flex-center"
+                style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; color: var(--color-primary); gap: 0.5rem;">
+                <span style="color: var(--color-secondary);">Ice</span>Creamy
+                <span style="font-size: 2rem;">🍦</span>
+            </a>
+
+            <nav class="desktop-nav" style="display: flex; align-items: center; gap: 0.5rem;">
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                <a href="productos.html" class="nav-link">Sabores</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="servicios.html#contacto" class="btn btn-primary"
+                    style="padding: 8px 20px; font-size: 1rem;">Pedido</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn"
+                style="display: none; font-size: 1.8rem; color: var(--color-primary); background: none; border: none; cursor: pointer;">☰</button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-nav" class="mobile-nav"
+            style="display: none; flex-direction: column; padding: 1rem; background: white; box-shadow: var(--shadow-md);">
+            <a href="index.html" class="nav-link" style="padding: 0.5rem 0;">Inicio</a>
+            <a href="nosotros.html" class="nav-link" style="padding: 0.5rem 0;">Nosotros</a>
+            <a href="productos.html" class="nav-link" style="padding: 0.5rem 0;">Sabores</a>
+            <a href="servicios.html" class="nav-link" style="padding: 0.5rem 0;">Servicios</a>
+            <a href="servicios.html#contacto" class="btn btn-primary"
+                style="padding: 8px 20px; font-size: 1rem; margin-top: 0.5rem;">Pedido</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section flex-center"
+            style="min-height: 80vh; background: linear-gradient(135deg, var(--color-bg) 0%, #ffeaf1 100%); text-align: center;">
+            <div class="container animate-fade-in">
+                <span
+                    style="font-family: var(--font-heading); background: var(--color-accent); padding: 5px 15px; border-radius: 20px; font-weight: bold; margin-bottom: 1rem; display: inline-block;">¡Nueva
+                    temporada de Mango! 🥭</span>
+                <h1 style="margin-top: 1rem;">La Felicidad en forma<br><span style="color: var(--color-primary);">de
                         Paleta</span></h1>
                 <p
                     style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
                     Hechas artesanalmente con frutas 100% naturales, sin conservadores y con el toque secreto de la
                     abuela.
                 </p>
-                <div class="flex-center" style="gap: 1rem;">
-                    <a href="productos.html" class="btn btn-primary">Ver Sabores</a>
-                    <a href="nosotros.html" class="btn btn-outline">Nuestra Historia</a>
+                <div class="flex-center" style="gap: 1rem; flex-wrap: wrap;">
+                    <a href="productos.html" class="btn btn-primary" style="width: 100%; max-width: 250px;">Ver Sabores</a>
+                    <a href="nosotros.html" class="btn btn-outline" style="width: 100%; max-width: 250px;">Nuestra Historia</a>
                 </div>
 
                 <!-- Floating Elements (Decorative) -->
@@ -231,8 +304,29 @@
     </footer>
 
     <script src="js/security.js"></script>
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
 
+        if (mobileMenuBtn && mobileNav) {
+            mobileMenuBtn.addEventListener('click', () => {
+                if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+                    mobileNav.style.display = 'flex';
+                    mobileMenuBtn.textContent = '✕';
+                } else {
+                    mobileNav.style.display = 'none';
+                    mobileMenuBtn.textContent = '☰';
+                }
+            });
+        }
 
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                if (mobileNav) mobileNav.style.display = 'none';
+                if (mobileMenuBtn) mobileMenuBtn.textContent = '☰';
+            }
+        });
+    </script>
 
 
     <!-- Botón Flotante Volver al Portafolio -->

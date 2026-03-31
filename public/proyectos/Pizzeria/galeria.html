@@ -41,11 +41,30 @@
                 <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="menu.html">Menú</a>
                 <a class="text-xs uppercase tracking-[0.2em] font-medium text-primary transition-colors" href="galeria.html">Galería</a>
             </nav>
-            <button class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm tracking-wide uppercase hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30">
-                Reservaciones
-            </button>
+            <div class="flex items-center gap-4">
+                <button class="hidden md:block bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm tracking-wide uppercase hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30">
+                    Reservaciones
+                </button>
+                <button id="menu-btn" class="md:hidden text-white hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-background-dark/95 backdrop-blur-md z-40 hidden flex-col items-center justify-center gap-8 border-t border-white/10 pt-20">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-white hover:text-primary">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <a class="text-xl uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="index.html">Inicio</a>
+        <a class="text-xl uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="experiencia.html">La Experiencia</a>
+        <a class="text-xl uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="historia.html">Nuestra Historia</a>
+        <a class="text-xl uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="menu.html">Menú</a>
+        <a class="text-xl uppercase tracking-[0.2em] font-medium text-primary hover:text-primary transition-colors" href="galeria.html">Galería</a>
+        <button class="bg-primary text-white px-8 py-3 rounded-lg font-bold text-base tracking-wide uppercase hover:bg-primary/90 mt-4">
+            Reservaciones
+        </button>
+    </div>
 
     <!-- Header -->
     <section class="pt-40 pb-16 text-center fade-in-up">

@@ -76,4 +76,23 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const closeMenuBtn = document.getElementById("close-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (mobileMenuBtn && closeMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("translate-x-full");
+            mobileMenu.classList.add("translate-x-0");
+            document.body.style.overflow = "hidden"; // Prevent scrolling
+        });
+
+        closeMenuBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("translate-x-0");
+            mobileMenu.classList.add("translate-x-full");
+            document.body.style.overflow = ""; // Restore scrolling
+        });
+    }
 });

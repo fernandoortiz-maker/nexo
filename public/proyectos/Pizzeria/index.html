@@ -49,11 +49,30 @@
                 <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="menu.html">Menú</a>
                 <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="galeria.html">Galería</a>
             </nav>
-            <button class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm tracking-wide uppercase hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30">
-                Reservaciones
-            </button>
+            <div class="flex items-center gap-4">
+                <button class="hidden md:block bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm tracking-wide uppercase hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30">
+                    Reservaciones
+                </button>
+                <button id="menu-btn" class="md:hidden text-white hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-background-dark/95 backdrop-blur-md z-40 hidden flex-col items-center justify-center gap-8 border-t border-white/10 pt-20">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-white hover:text-primary">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <a class="text-xl uppercase tracking-[0.2em] font-medium text-white hover:text-primary transition-colors" href="index.html">Inicio</a>
+        <a class="text-xl uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="experiencia.html">La Experiencia</a>
+        <a class="text-xl uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="historia.html">Nuestra Historia</a>
+        <a class="text-xl uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="menu.html">Menú</a>
+        <a class="text-xl uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="galeria.html">Galería</a>
+        <button class="bg-primary text-white px-8 py-3 rounded-lg font-bold text-base tracking-wide uppercase hover:bg-primary/90 mt-4">
+            Reservaciones
+        </button>
+    </div>
 
     <!-- Hero Section -->
     <section class="relative h-screen w-full flex items-center justify-center overflow-hidden fade-in-up delay-100">
@@ -69,11 +88,11 @@
             <p class="text-white/80 text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto mb-10 fade-in-up delay-300">
                 Experimente la cumbre de la alta cocina moderna, donde la narrativa visual se encuentra con la excelencia culinaria.
             </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-up delay-400">
-                <a href="menu.html" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-base uppercase tracking-widest hover:scale-105 transition-transform shadow-lg shadow-primary/20">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-up delay-400 w-full">
+                <a href="menu.html" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-base uppercase tracking-widest hover:scale-105 transition-transform shadow-lg shadow-primary/20 w-full sm:w-auto">
                     Explorar el Menú
                 </a>
-                <a href="historia.html" class="border border-white/30 text-white backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-base uppercase tracking-widest hover:bg-white/10 transition-colors">
+                <a href="historia.html" class="border border-white/30 text-white backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-base uppercase tracking-widest hover:bg-white/10 transition-colors w-full sm:w-auto">
                     La Historia
                 </a>
             </div>
@@ -204,16 +223,16 @@
     <!-- Footer Section -->
     <footer class="bg-charcoal pt-24 pb-12 px-6 lg:px-20 border-t border-white/5 mt-10">
         <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 fade-in-up">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 fade-in-up text-center md:text-left">
                 <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-2 mb-6">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-6">
                         <span class="material-symbols-outlined text-primary text-3xl">restaurant_menu</span>
                         <h2 class="serif-heading text-2xl font-bold tracking-tight text-white">Lumina</h2>
                     </div>
-                    <p class="text-white/50 max-w-sm mb-8">
+                    <p class="text-white/50 max-w-sm mb-8 mx-auto md:mx-0">
                         Únase a nosotros para una velada donde cada bocado es una obra maestra. Ubicados en el corazón del distrito de arte de la ciudad.
                     </p>
-                    <div class="flex gap-4">
+                    <div class="flex gap-4 justify-center md:justify-start">
                         <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:-translate-y-1 transition-all" href="#">
                             <span class="material-symbols-outlined text-white text-sm">alternate_email</span>
                         </a>
