@@ -2,12 +2,14 @@
 const nextConfig = {
   // Activa la exportación estática para GitHub Pages
   output: 'export',
+  // Genera carpetas con index.html para evitar errores 404 en subrutas en GitHub Pages
+  trailingSlash: true,
   // Desactiva la optimización de imágenes (no soportada nativamente en GitHub Pages sin configuración adicional)
   images: {
     unoptimized: true,
   },
   // Descomentado para GitHub Pages
-  basePath: '/proyectos',
+  basePath: '/nexo',
 };
 
 export default nextConfig;
