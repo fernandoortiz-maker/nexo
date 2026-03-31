@@ -58,12 +58,12 @@ export default async function Home() {
   const featuredProducts = await getFeaturedProducts();
 
   const categories = [
-    { title: 'Restaurantes', image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&q=80' },
-    { title: 'Gimnasios', image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&q=80' },
-    { title: 'Tiendas de Ropa', image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&q=80' },
-    { title: 'Corporativos', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80' },
-    { title: 'Portafolios', image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=500&q=80' },
-    { title: 'Citas Médicas', image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=500&q=80' },
+    { title: 'Restaurantes y Comida', image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&q=80', enDesarrollo: false },
+    { title: 'Gimnasios y Fitness', image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&q=80', enDesarrollo: false },
+    { title: 'Estudios de Música', image: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80', enDesarrollo: false },
+    { title: 'Ecommerce y Ropa', image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&q=80', enDesarrollo: true },
+    { title: 'Corporativos', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80', enDesarrollo: true },
+    { title: 'Clínicas Médicas', image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=500&q=80', enDesarrollo: true },
   ];
 
   return (
@@ -83,7 +83,7 @@ export default async function Home() {
 
         <div className={styles.categoriesGrid}>
           {categories.map((cat, index) => (
-            <CategoryCard key={cat.title} title={cat.title} image={cat.image} />
+            <CategoryCard key={cat.title} title={cat.title} image={cat.image} enDesarrollo={cat.enDesarrollo} />
           ))}
         </div>
       </section>
