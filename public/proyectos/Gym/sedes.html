@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KINETIC VOID // SEDES</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config" src="js/tailwind-config.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="overflow-x-hidden">
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-text">Loading_Void...</div>
+    </div>
+
+    <!-- HUD Overlay Peripherals -->
+    <div class="fixed inset-0 pointer-events-none z-[100] border-[12px] border-transparent">
+        <div class="absolute top-4 left-10 font-mono text-[10px] text-outline tracking-[0.3em] uppercase hidden md:block">
+            System_Status: <span class="text-primary-container">Optimal</span> // Auth_Token: 0x9928X
+        </div>
+        <div class="absolute bottom-4 right-10 font-mono text-[10px] text-outline tracking-[0.3em] uppercase hidden md:block">
+            Void_Protocol_V.4.2 // Kinetic_Link: Stable
+        </div>
+    </div>
+
+    <!-- TopAppBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-md flex justify-between items-center px-4 md:px-10 py-6 border-b border-[#8E90A2]/10 transition-all">
+        <a href="index.html" class="text-2xl md:text-3xl font-black italic tracking-tighter text-[#2E5BFF] font-['Space_Grotesk'] uppercase hover:scale-105 transition-transform">
+            KINETIC VOID
+        </a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="entrenamiento.html">ENTRENAMIENTO</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="membresias.html">MEMBRESÍAS</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="filosofia.html">FILOSOFÍA</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="sedes.html">SEDES</a>
+        </div>
+        <a href="membresias.html" class="bg-[#2E5BFF] text-white px-4 md:px-6 py-2 font-['Space_Grotesk'] font-bold uppercase tracking-tighter kinetic-glow active:scale-95 transition-all text-sm md:text-base">
+            ÚNETE AL VACÍO
+        </a>
+    </nav>
+
+    <!-- Locations Section -->
+    <section class="pt-32 pb-24 px-4 md:px-10 bg-surface min-h-screen">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal-scale">
+                <span class="font-mono text-primary-container text-xs tracking-widest uppercase mb-2 block">// BASES_DE_OPERACIÓN</span>
+                <h2 class="text-5xl md:text-7xl font-black font-headline uppercase text-white glitch-hover">Terminales Físicas</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Location 1 -->
+                <div class="group relative overflow-hidden bg-surface-container-low border-l-4 border-primary-container reveal-left">
+                    <img alt="Sede Centro" class="w-full h-[300px] object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500 saturate-0 group-hover:saturate-100" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-[#131313]/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                        <div class="font-mono text-primary-container text-[10px] tracking-widest mb-2 uppercase">Centro Sector_01</div>
+                        <h3 class="text-3xl font-black font-headline uppercase text-white mb-2">NEXUS DOWNTOWN</h3>
+                        <p class="text-outline text-sm font-mono flex items-center gap-2 mb-4">
+                            <span class="material-symbols-outlined text-sm">location_on</span> Av. Principal 404, Ciudad Neón
+                        </p>
+                        <button class="border border-outline/30 text-white px-6 py-2 font-headline font-bold text-sm uppercase tracking-tighter hover:bg-white/5 transition-all">
+                            CONECTAR
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Location 2 -->
+                <div class="group relative overflow-hidden bg-surface-container-low border-l-4 border-tertiary-container reveal-right delay-100">
+                    <img alt="Sede Este" class="w-full h-[300px] object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500 saturate-0 group-hover:saturate-100" src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1200&auto=format&fit=crop" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-[#131313]/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                        <div class="font-mono text-tertiary-container text-[10px] tracking-widest mb-2 uppercase">Este Sector_02</div>
+                        <h3 class="text-3xl font-black font-headline uppercase text-white mb-2">VOID ESTE</h3>
+                        <p class="text-outline text-sm font-mono flex items-center gap-2 mb-4">
+                            <span class="material-symbols-outlined text-sm">location_on</span> Distrito Industrial, Galpón 9
+                        </p>
+                        <button class="border border-outline/30 text-white px-6 py-2 font-headline font-bold text-sm uppercase tracking-tighter hover:bg-white/5 transition-all">
+                            CONECTAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-surface-container p-8 border border-outline/10 text-center reveal">
+                <p class="text-outline text-sm font-mono uppercase tracking-widest leading-loose">
+                    ¿NO ENCUENTRAS UNA TERMINAL CERCANA? <br />
+                    <span class="text-primary-container font-bold">INICIA EL PROTOCOLO VIRTUAL DESDE CUALQUIER NODO.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0E0E0E] flex flex-col md:flex-row justify-between items-center px-10 py-12 w-full border-t border-[#8E90A2]/15">
+        <div class="mb-8 md:mb-0 reveal-left">
+            <div class="text-lg font-bold text-[#2E5BFF] font-headline uppercase tracking-tighter mb-2">KINETIC VOID</div>
+            <p class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2]">© 2024 KINETIC VOID // SYSTEM_ACTIVE</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 reveal-right">
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">INSTAGRAM</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">SPOTIFY</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">TIKTOK</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">LEGAL</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">PRIVACIDAD</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

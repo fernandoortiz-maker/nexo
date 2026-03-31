@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KINETIC VOID // SYSTEM_ACTIVE</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config" src="js/tailwind-config.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="overflow-x-hidden">
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-text">Loading_Void...</div>
+    </div>
+
+    <!-- HUD Overlay Peripherals -->
+    <div class="fixed inset-0 pointer-events-none z-[100] border-[12px] border-transparent">
+        <div class="absolute top-4 left-10 font-mono text-[10px] text-outline tracking-[0.3em] uppercase hidden md:block">
+            System_Status: <span class="text-primary-container">Optimal</span> // Auth_Token: 0x9928X
+        </div>
+        <div class="absolute bottom-4 right-10 font-mono text-[10px] text-outline tracking-[0.3em] uppercase hidden md:block">
+            Void_Protocol_V.4.2 // Kinetic_Link: Stable
+        </div>
+    </div>
+
+    <!-- TopAppBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-md flex justify-between items-center px-4 md:px-10 py-6 border-b border-[#8E90A2]/10 transition-all">
+        <a href="index.html" class="text-2xl md:text-3xl font-black italic tracking-tighter text-[#2E5BFF] font-['Space_Grotesk'] uppercase hover:scale-105 transition-transform">
+            KINETIC VOID
+        </a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="entrenamiento.html">ENTRENAMIENTO</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="membresias.html">MEMBRESÍAS</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="filosofia.html">FILOSOFÍA</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="sedes.html">SEDES</a>
+        </div>
+        <a href="membresias.html" class="bg-[#2E5BFF] text-white px-4 md:px-6 py-2 font-['Space_Grotesk'] font-bold uppercase tracking-tighter kinetic-glow active:scale-95 transition-all text-sm md:text-base">
+            ÚNETE AL VACÍO
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-start pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0 reveal-scale">
+            <img alt="Fondo cinético de atleta entrenando en sombras" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGHYCG6ydTzwSbdGFFt-fnboEd4eaMH1KZRwwqvQajC1cYuirtLdNjBjhY2F_oZGcyFEG2hl80CcgSAr6QvbMgJFoSjSD1VzsZAr8ZHc60Td_mPoFPWZl-0LTazOKMXj2ZpHpqycmrw74owuzfO86Fx755-CAXCoQiSb0T-13qCcCVfZ6kXiIhcXnLPe4JHZNofp4MzHFx2L-KxvVhFXcT2Ji1m1XV1S-x2wB24nhyLsQR-mvMc1SUDkqjbC9iXBqzo3uNw-yiCCk" />
+            <div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 px-4 md:px-10 max-w-7xl reveal-left">
+            <div class="mb-4 inline-flex items-center gap-2 bg-tertiary-container px-3 py-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                <span class="font-mono text-[10px] font-bold tracking-[0.2em] text-white uppercase">Advertencia: Alta Intensidad</span>
+            </div>
+            
+            <h1 class="text-[14vw] md:text-[8rem] font-black leading-[0.8] tracking-tighter font-headline uppercase mb-8 glitch-hover">
+                ROMPE EL <br />
+                <span class="text-primary-container italic">LÍMITE</span>
+            </h1>
+            
+            <p class="max-w-md text-outline text-sm md:text-base leading-relaxed mb-10 border-l-4 border-primary-container pl-6 font-body">
+                No entrenamos cuerpos. Diseñamos arquitectura cinética. El vacío no es el final, es el espacio donde te reconstruyes bajo presión absoluta.
+            </p>
+            
+            <div class="flex flex-wrap gap-4">
+                <a href="entrenamiento.html" class="bg-primary-container text-white px-10 py-5 font-headline font-black text-xl uppercase tracking-tighter kinetic-glow inline-block">
+                    INICIAR SECUENCIA
+                </a>
+                <a href="sedes.html" class="border border-outline/30 text-white px-10 py-5 font-headline font-black text-xl uppercase tracking-tighter hover:bg-white/5 transition-all inline-block">
+                    VER MÓDULOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0E0E0E] flex flex-col md:flex-row justify-between items-center px-10 py-12 w-full border-t border-[#8E90A2]/15">
+        <div class="mb-8 md:mb-0 reveal-left">
+            <div class="text-lg font-bold text-[#2E5BFF] font-headline uppercase tracking-tighter mb-2">KINETIC VOID</div>
+            <p class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2]">© 2024 KINETIC VOID // SYSTEM_ACTIVE</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 reveal-right">
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">INSTAGRAM</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">SPOTIFY</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">TIKTOK</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">LEGAL</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">PRIVACIDAD</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+
+    <!-- Botón Flotante Volver al Portafolio -->
+    <a href="../../" 
+       style="position: fixed; bottom: 30px; right: 30px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: #0f172a; color: #ffffff; border-radius: 50%; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15); z-index: 99999; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid rgba(255,255,255,0.1);"
+       onmouseover="this.style.transform='scale(1.1) translateY(-5px)'; this.style.backgroundColor='#1e293b'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1)';"
+       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.backgroundColor='#0f172a'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15)';"
+       title="Volver al Inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+    </a>
+</body>
+</html>

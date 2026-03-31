@@ -1,0 +1,63 @@
+:root {
+    --midnight-blue: #0A111F;
+    --champagne-gold: #D4AF37;
+    --creamy-white: #FDFBF7;
+    --navy-muted: #161E2D;
+}
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--midnight-blue);
+    color: var(--creamy-white);
+    overflow-x: hidden;
+}
+.serif-heading {
+    font-family: 'Playfair Display', serif;
+    color: var(--creamy-white);
+}
+.gold-button {
+    border: 1px solid rgba(212, 175, 55, 0.6);
+    color: #D4AF37;
+    padding: 0.75rem 2rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    transition: all 0.5s;
+    background: transparent;
+    cursor: pointer;
+}
+.gold-button:hover {
+    background-color: #D4AF37;
+    color: #0A111F;
+}
+.gold-divider {
+    height: 1px;
+    background-color: rgba(212, 175, 55, 0.3);
+}
+
+/* Animaciones de scroll */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+
+/* Efecto hover en imágenes */
+.hover-img-wrapper {
+    overflow: hidden;
+}
+.hover-img {
+    transition: transform 0.8s ease;
+}
+.hover-img-wrapper:hover .hover-img {
+    transform: scale(1.05);
+}

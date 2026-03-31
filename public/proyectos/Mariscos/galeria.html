@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Galería - El Faro del Puerto</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="bg-surface flex flex-col min-h-screen">
+
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+    <nav class="flex justify-between items-center px-6 lg:px-8 py-4 max-w-7xl mx-auto">
+        <a href="index.html" class="font-serif italic text-2xl text-blue-900 dark:text-blue-100">El Faro del Puerto</a>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="index.html">Inicio</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="menu.html">Menú</a>
+            <a class="text-blue-900 dark:text-blue-300 font-bold border-b-2 border-teal-400 pb-1 font-sans uppercase tracking-wider text-sm" href="galeria.html">Galería</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="historia.html">Historia</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="ubicacion.html">Ubicación</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="reservas.html" class="hidden md:block bg-gradient-to-r from-primary to-primary-container text-white px-6 py-2 rounded-md font-sans uppercase text-sm font-semibold hover:shadow-lg transition-all">Reservar</a>
+            <button id="menu-btn" class="md:hidden text-primary"><span class="material-symbols-outlined text-3xl">menu</span></button>
+        </div>
+    </nav>
+</header>
+<div id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center gap-8 border-t pt-20">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-primary"><span class="material-symbols-outlined text-3xl">close</span></button>
+    <a class="text-lg uppercase text-slate-600" href="index.html">Inicio</a>
+    <a class="text-lg uppercase text-slate-600" href="menu.html">Menú</a>
+    <a class="text-lg uppercase text-primary font-bold" href="galeria.html">Galería</a>
+    <a class="text-lg uppercase text-slate-600" href="historia.html">Historia</a>
+    <a class="text-lg uppercase text-slate-600" href="ubicacion.html">Ubicación</a>
+</div>
+
+<main class="flex-grow pt-32 pb-24">
+<section class="max-w-7xl mx-auto px-8">
+    <div class="mb-12 text-center">
+        <h2 class="text-4xl md:text-5xl font-headline text-primary mb-4">Ambiente y Platos</h2>
+        <div class="h-1 w-20 bg-secondary mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="overflow-hidden rounded-xl shadow-sm aspect-square group">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEvYR3Hl4LGnxueAgzbRqaOlKiEPCgFj-zsb7bp2-HzkXrVrKBz-bdGZbgRyvh-oqEd9nL6tOWxXRzoL0FKKfeScNOD0oBTp1dRpC92EDui5JLINNCdEHn8qGc6-EYnnA4E2iAn3F1WzaA9F3ERVBTGNvdkeYyS-PExszzm2OrrP8Ns-r-WqNrmP8NNjSa7ww4ooVlNmgdOJCWsvLktuKtjuja95t8lR5pUk5ivuonv4xeQCSol8CxzBPPamJoGWmMqmhqCx2WeXU5" alt="Mariscos 1">
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-sm aspect-square group">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA95lXidsmsUSLY_vfrQUT4IREPr8T0XHUD8gSwlKKtvV4CiTkpKt44Ew3vxQ-1EPQoYyTURONX7RYkVXIxJrBRtSs03NkrFbiC4zVgTcg500fYwWgYdpeVqfSq7a1ZkteQHibDeKcfqS1WCo0UvOdI-IV4PCa8pOe-IExf0Q7U1yVzgSmW1gcVa5AGC5Pf_DGw--7Tdhe382SQ8OGLFEo-cvqQjEFWrPRJUb7gS72BM3sSlCJw5d5OUPJD_2OFpKN4UfKqnueMQm48" alt="Cóctel">
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-sm aspect-square group">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuSh9Pk2XnXIi0lnPGfBaKxHjckYZ846Nrw9wN_I5uifZ5gU-LGk1MX9pwl5iU7Cd0mbFMxb9-qdawZcfZD6jMwyqeCZ4nAU22Y4b4i-4JkbddYdc2jDXme2RC-uy3UOx5ihlthAEx22AWdS6VsoGDw6rECSexJOW4Uhbz0JTkhCmqxvVZ9L9trShlfxvwGAqDNZcL6-HSFWiBSOj0f8EfvzKRxk_VP34IoIvWT4xgrOUw5C4BbVQU609bscsCY0n4awYwxqiztw75" alt="Pescado">
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-sm aspect-square group">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA__O1rXx8RyRt_UP_V1FN73OoXpSFFjsh-Ma5ZJlgTBcd4elqb11HCNwHTsJ8EKp00obT8diZoc-Yei_wAzx_Ssk4h3MZ1zWRGH4P3WbcfMivxWqI1F_C6iEN96R412i2KOFozllUwYQAsW1Z3I8nfxP_4XhPeyDY4PJrxf4WZbCjEL1ji6JO-LgyOLvCfkYE4R_uAnyM9s4H2HB8-CatjDzfro34EC7nbkGWdhKMMLy_CGLP4eVU6AH_VS0FKo59cNlVs5mQZjlIh" alt="Pulpo">
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-sm aspect-[2/1] md:aspect-auto md:col-span-2 group">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfj1rp5liR_HaYcWUVAe1Jj_VAVk-erSErkjah-gobt9PiZY10kO_IJYUeHlPuDmbAe-2egXU5UoQPOg739Ul3tGZuWFX6C_9Ov-K1_i-xEm8YMoTVhip3z8_Krw8QxbcgVx4DAhwUMWCqNftlxMbdYFkZbLqK9pP7M5BqwpRpZsF0c0sVN4rG7mdjcC74hOOr1SXqGP-vs0W7J0DFH6x9qSLRAysywvSAJNwM3unuizOfjIKunk1FwLSGmpuBlFiXtApgxmEc1Tv0" alt="Interior">
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="w-full mt-auto border-t border-slate-200 bg-slate-50">
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-7xl mx-auto">
+        <div class="font-serif text-lg text-primary">El Faro del Puerto</div>
+        <div class="text-slate-500 font-sans text-sm tracking-tight">© 2024 El Faro del Puerto. Todos los derechos reservados.</div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

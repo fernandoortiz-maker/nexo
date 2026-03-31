@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Herencia | Lumina</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;700;900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="bg-midnight-blue text-creamy-white">
+
+<!-- Header -->
+<header class="fixed top-0 left-0 w-full z-50 border-b border-champagne-gold/10 bg-midnight-blue/90 backdrop-blur-md transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 group">
+            <span class="material-symbols-outlined text-champagne-gold text-2xl font-light group-hover:scale-110 transition-transform">restaurant</span>
+            <h2 class="serif-heading text-2xl font-light tracking-[0.2em] uppercase">Lumina</h2>
+        </a>
+        <nav class="hidden md:flex items-center gap-12">
+            <a class="text-[10px] uppercase tracking-[0.4em] font-light text-creamy-white/60 hover:text-champagne-gold transition-colors" href="index.html">Inicio</a>
+            <a class="text-[10px] uppercase tracking-[0.4em] font-light text-champagne-gold transition-colors" href="historia.html">Herencia</a>
+            <a class="text-[10px] uppercase tracking-[0.4em] font-light text-creamy-white/60 hover:text-champagne-gold transition-colors" href="menu.html">Menú</a>
+            <a class="text-[10px] uppercase tracking-[0.4em] font-light text-creamy-white/60 hover:text-champagne-gold transition-colors" href="galeria.html">Galería</a>
+        </nav>
+        <div class="hidden md:block">
+            <a href="reservas.html" class="border border-champagne-gold/40 text-champagne-gold px-6 py-2 text-[10px] tracking-[0.3em] uppercase hover:bg-champagne-gold hover:text-midnight-blue transition-all">Reservar Mesa</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-champagne-gold">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</header>
+
+<!-- Menú Móvil -->
+<div id="mobile-menu" class="fixed inset-0 bg-midnight-blue z-40 hidden flex-col items-center justify-center gap-8 border-t border-champagne-gold/10 pt-20">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-champagne-gold">
+        <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a class="text-xs uppercase tracking-[0.4em] font-light text-creamy-white hover:text-champagne-gold transition-colors" href="index.html">Inicio</a>
+    <a class="text-xs uppercase tracking-[0.4em] font-light text-champagne-gold transition-colors" href="historia.html">Herencia</a>
+    <a class="text-xs uppercase tracking-[0.4em] font-light text-creamy-white hover:text-champagne-gold transition-colors" href="menu.html">Menú</a>
+    <a class="text-xs uppercase tracking-[0.4em] font-light text-creamy-white hover:text-champagne-gold transition-colors" href="galeria.html">Galería</a>
+    <a class="text-xs uppercase tracking-[0.4em] font-light text-champagne-gold border border-champagne-gold/40 px-6 py-2 transition-colors mt-4" href="reservas.html">Reservar Mesa</a>
+</div>
+
+<!-- Floating Reserve Button -->
+<div class="fixed bottom-10 right-10 z-50">
+    <a href="reservas.html" class="bg-champagne-gold text-midnight-blue w-14 h-14 rounded-full shadow-2xl flex items-center justify-center group transition-all duration-500 hover:w-48 overflow-hidden">
+        <span class="material-symbols-outlined text-xl">event</span>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 font-medium text-[10px] uppercase tracking-[0.2em] whitespace-nowrap ml-0 group-hover:ml-3">Reservar Mesa</span>
+    </a>
+</div>
+
+<section class="py-32 px-6 lg:px-20 bg-navy-muted/30 pt-48" id="story">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-20">
+            <div class="lg:w-2/5 flex flex-col justify-center gap-10 fade-up">
+                <span class="text-champagne-gold/60 uppercase tracking-[0.5em] text-[10px]">Nuestras Raíces</span>
+                <h2 class="serif-heading text-4xl md:text-6xl font-light">Legado de <br/> Calidez</h2>
+                <div class="gold-divider w-16"></div>
+                <p class="text-creamy-white italic serif-heading text-2xl font-extralight leading-relaxed hover:text-champagne-gold transition-colors">
+                    "El verdadero lujo se encuentra en el resplandor silencioso de la perfección."
+                </p>
+                <p class="text-creamy-white/60 leading-loose font-light text-sm">
+                    La visión del Chef Julian Thorne para Lumina nació de un deseo de combinar la alta cocina con un espíritu acogedor y sofisticado. Celebramos cada ingrediente a través de texturas doradas y sabores ricos y honestos.
+                </p>
+                <div class="mt-4">
+                    <img src="https://images.unsplash.com/photo-1583394838407-3bb6415713c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Firma del Chef" class="w-48 opacity-50 filter sepia grayscale">
+                </div>
+            </div>
+            <div class="lg:w-3/5 grid grid-cols-2 gap-6 h-[700px] fade-up delay-200">
+                <div class="h-full bg-cover bg-center border border-champagne-gold/10 brightness-90 hover-img-wrapper" style="background-image: url('https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="w-full h-full hover-img bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div class="h-1/2 bg-cover bg-center border border-champagne-gold/10 brightness-90 hover-img-wrapper">
+                        <div class="w-full h-full hover-img bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    </div>
+                    <div class="h-1/2 bg-cover bg-center border border-champagne-gold/10 brightness-75 hover-img-wrapper">
+                        <div class="w-full h-full hover-img bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-midnight-blue border-t border-champagne-gold/10 pt-32 pb-16 px-6 lg:px-20 fade-up">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-20 mb-24">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-3 mb-10 group">
+                    <span class="material-symbols-outlined text-champagne-gold text-2xl font-light group-hover:rotate-12 transition-transform">restaurant</span>
+                    <h2 class="serif-heading text-2xl font-light tracking-[0.2em] uppercase">Lumina</h2>
+                </div>
+                <p class="text-creamy-white/50 text-sm font-light leading-relaxed max-w-sm mb-12">
+                    Un destino refinado para quienes buscan profundidad culinaria y calidez estética. Manteniendo la tradición de excelencia en cada detalle.
+                </p>
+                <div class="flex gap-8">
+                    <a class="text-creamy-white/40 hover:text-champagne-gold transition-colors" href="#"><span class="text-[10px] uppercase tracking-[0.2em]">Instagram</span></a>
+                    <a class="text-creamy-white/40 hover:text-champagne-gold transition-colors" href="#"><span class="text-[10px] uppercase tracking-[0.2em]">Revista</span></a>
+                    <a class="text-creamy-white/40 hover:text-champagne-gold transition-colors" href="#"><span class="text-[10px] uppercase tracking-[0.2em]">Prensa</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-champagne-gold font-light mb-8 uppercase tracking-[0.4em] text-[10px]">Horarios de Atención</h4>
+                <ul class="text-creamy-white/50 space-y-4 text-[11px] font-light uppercase tracking-widest">
+                    <li class="flex justify-between"><span>Mar - Jue</span> <span>18:00 — 22:00</span></li>
+                    <li class="flex justify-between"><span>Vie - Sáb</span> <span>18:00 — 23:30</span></li>
+                    <li class="flex justify-between"><span>Domingo</span> <span>12:00 — 20:00</span></li>
+                    <li class="flex justify-between opacity-50"><span>Lunes</span> <span>Cerrado</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-champagne-gold font-light mb-8 uppercase tracking-[0.4em] text-[10px]">El Atelier</h4>
+                <ul class="text-creamy-white/50 space-y-4 text-[11px] font-light uppercase tracking-widest">
+                    <li>123 Culinary Lane, NY</li>
+                    <li>+1 (555) 123-4567</li>
+                    <li>reservas@luminadining.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pt-16 border-t border-champagne-gold/10 text-center">
+            <p class="text-creamy-white/20 text-[9px] tracking-[0.6em] uppercase">© 2026 Lumina Collective. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

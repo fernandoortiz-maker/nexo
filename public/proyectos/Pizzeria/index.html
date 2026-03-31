@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="dark" lang="es-419">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Lumina | Arte en un Plato</title>
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="styles.css" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#120d0b",
+                        "charcoal": "#181311",
+                        "cream": "#fdfaf1"
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-charcoal dark:text-cream page-enter">
+
+    <!-- Sticky Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <span class="material-symbols-outlined text-primary text-3xl">restaurant_menu</span>
+                <h2 class="serif-heading text-2xl font-bold tracking-tight text-white">Lumina</h2>
+            </a>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="experiencia.html">La Experiencia</a>
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="historia.html">Nuestra Historia</a>
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="menu.html">Menú</a>
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="galeria.html">Galería</a>
+            </nav>
+            <button class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm tracking-wide uppercase hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30">
+                Reservaciones
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden fade-in-up delay-100">
+        <div class="absolute inset-0 z-0">
+            <!-- Background Image parallax -->
+            <div class="w-full h-[120%] bg-cover bg-center parallax-bg -top-[10%]" data-alt="Toma cinematográfica de un chef profesional emplatando" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZDyeEomdViuVrYgatrkN6xwwSkgRqWxCnzEv2sryWtAPgTZsg84FM6hhUQ8uYVsiU7xX_kvuoptvg4YRfBvWsiET4LQN1Qn3C_HyxSiuYVWui2HtzZ2pDxQVhgauiIKpnzxxNfF87E6lplP_7eU36BiommsbPSgwgTON7qVbLdTvJnfeQhqP4djJecfwaQ5TIdv0vb5C-g7pft2oP2m1YQAJF4Qdf7dAS3azuuNDAgow5s8WoRvLWRL2WmE7fQ2iN84YDhrpCBPE');">
+            </div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="serif-heading text-5xl md:text-8xl text-white font-black leading-tight mb-6 fade-in-up delay-200">
+                Arte en un Plato
+            </h1>
+            <p class="text-white/80 text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto mb-10 fade-in-up delay-300">
+                Experimente la cumbre de la alta cocina moderna, donde la narrativa visual se encuentra con la excelencia culinaria.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-up delay-400">
+                <a href="menu.html" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-base uppercase tracking-widest hover:scale-105 transition-transform shadow-lg shadow-primary/20">
+                    Explorar el Menú
+                </a>
+                <a href="historia.html" class="border border-white/30 text-white backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-base uppercase tracking-widest hover:bg-white/10 transition-colors">
+                    La Historia
+                </a>
+            </div>
+        </div>
+        <a href="#experience" class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer">
+            <span class="material-symbols-outlined text-white text-3xl">expand_more</span>
+        </a>
+    </section>
+
+    <!-- Floating Table Button -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <button class="bg-primary text-white p-4 rounded-full shadow-[0_0_20px_rgba(236,91,19,0.4)] flex items-center gap-3 group hover:pr-8 transition-all hover:scale-105">
+            <span class="material-symbols-outlined">calendar_month</span>
+            <span class="max-w-0 overflow-hidden group-hover:max-w-[250px] transition-all duration-500 font-bold whitespace-nowrap opacity-0 group-hover:opacity-100">Reservar una Mesa</span>
+        </button>
+    </div>
+
+    <!-- The Experience Section -->
+    <section class="py-24 px-6 lg:px-20 bg-background-dark overflow-hidden" id="experience">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="relative fade-in-right">
+                    <div class="aspect-[4/5] bg-cover bg-center rounded-xl shadow-2xl" data-alt="Interior de restaurante con iluminación tenue y acentos dorados" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuALad_CjkEd4PlYh3eCil39dUVx6EXCSgIdT33jidu7FaKP3hbe2BJn48sPsMEaQ83O6URAAl4QtQiiVALmP1gMw-SNi7f1xyr6nxAEkv9rUcUR8LqvplFOubgHaalFs7hiiZBtQF7ykpooic7nyhkTFeU0e44SsVI5c4t_D8wLKRKnkAY66x2lTK34qOBmHuu-lEV4WJg6JgWdBHWRNJTtn6w1m8kfra8cAgikFPJOdb3Gg22QNxhEaJUfNADY-SVs0qfbPE4gxpg');">
+                    </div>
+                    <div class="absolute -bottom-10 -right-10 hidden xl:block w-64 h-80 bg-cover bg-center rounded-xl border-8 border-background-dark shadow-xl hover:scale-105 transition-transform duration-500" data-alt="Primer plano de un cóctel de lujo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJ8uet_Ek00prwfoSasPzKmKCsllEU0K5TFNKyI2_FoHGVbO4TfUTND_4FNrik1upwIhfvbumSDkIpcd4pZnIyEdfGKOwao2LKVsciw8H0rB6QIaOzbM9QCBtrXsPULnp6ifSzJ-rDB79zdYNVRfT2cUsyBlr2cn0CIru_rRbH48PIQaBqug_5e_jInCEB7WMEJlnVgstJ31Qhf1bzQ4stM7avsriihGpsMfFWvPUrf-VQAfQnl-EfSF3Zt90mX5L-gdrylbjU_lY');">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8 fade-in-left delay-200">
+                    <span class="text-primary font-bold uppercase tracking-[0.3em] text-sm">Atmósfera</span>
+                    <h2 class="serif-heading text-4xl md:text-6xl text-white leading-tight">
+                        Viaje Sensorial <br/> Inmersivo
+                    </h2>
+                    <p class="text-white/60 text-lg leading-relaxed max-w-lg">
+                        Cada detalle está curado para transportarlo a un mundo de deleite sensorial, desde la iluminación dorada hasta las texturas de carbón y el susurro de la seda en cada rincón de nuestro espacio.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8 mt-4">
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-white font-bold text-xl serif-heading">Ambiente</h4>
+                            <p class="text-white/50 text-sm">Una estética profunda en carbón y oro diseñada para la intimidad y elegancia.</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-white font-bold text-xl serif-heading">Servicio</h4>
+                            <p class="text-white/50 text-sm">Experiencia gastronómica atenta y personalizada para cada uno de nuestros invitados.</p>
+                        </div>
+                    </div>
+                    <a href="experiencia.html" class="mt-4 inline-flex items-center gap-2 text-primary font-bold tracking-widest uppercase hover:text-white transition-colors self-start border-b border-primary hover:border-white pb-1">
+                        Descubre más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section (Asymmetrical Grid) -->
+    <section class="py-24 px-6 lg:px-20 bg-charcoal" id="story">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-1/3 flex flex-col justify-center gap-6 fade-in-up">
+                    <h2 class="serif-heading text-4xl md:text-5xl text-white">Nuestro Legado</h2>
+                    <div class="w-20 h-1 bg-primary"></div>
+                    <p class="text-white/70 italic serif-heading text-xl">
+                        "Cocinar no se trata solo de ingredientes; se trata de plasmar el alma de la tierra en un plato."
+                    </p>
+                    <p class="text-white/50 leading-relaxed">
+                        Fundado por el Chef Julian Thorne, Lumina comenzó como un sueño para fusionar las técnicas clásicas francesas con la gastronomía molecular moderna. Cada plato cuenta una historia de origen, arte y pasión inquebrantable.
+                    </p>
+                    <a href="historia.html" class="mt-4 inline-flex items-center gap-2 text-primary font-bold tracking-widest uppercase hover:text-white transition-colors self-start border-b border-primary hover:border-white pb-1">
+                        Nuestra Historia Completa <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="lg:w-2/3 grid grid-cols-2 gap-4 h-[600px] fade-in-up delay-200">
+                    <div class="h-full bg-cover bg-center rounded-xl row-span-2 shadow-lg hover:scale-[1.02] transition-transform duration-500" data-alt="Chef Julian Thorne preparando hierbas delicadas" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWKRgXldShoj9-HM6vZkaaEtVhC0UhLbbOGWlhegyHyzF_3WfPZm5_dCdDwNDQvm5DU2B_Or1AsD5SA4PHH-UHcnWhlTkModF7ij1Ppe9SpbOv6Bx0UIeRlA-_lO7UoLU_2WjGW-OEAuGi7qzdqqPlo6zzP19mswNnmSOZ8za5J-yhkkqBEtALxQdmAsgmmGrX3URDAi-IUJbEf3LQKPoXuPEzd7GbQ3oviaS5H5lp-D_UB36hIz217huIipgUdMyx5DMuwFPci_o');">
+                    </div>
+                    <div class="h-full bg-cover bg-center rounded-xl shadow-lg hover:scale-[1.02] transition-transform duration-500" data-alt="Platos de cerámica artesanales en una cocina oscura" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtYUIKSSm1IoWHjH8gyYLIqI6VrTKkw7TQoZQB52oo0nrpgW3EJ1VqtAxZv6QX3ztKiPyFeOm8k3TVOrvjFBHIZNwitDeH4ZkO0V6ub7XKXU8r15uZlWuN91X9YISPmTKYcxLYgo5k8o1-mBZkQqz_N6l8yZDJ04POZ0s-ytHJ-AoBbcT0MQL65209TMn_4ep4vI-leiqJhpLWBn3OjF5AeOo9D-sOuDSvju-yyyll15NNOvEXRbO_RgYC6YrA04aaS6qXJYiOnaU');">
+                    </div>
+                    <div class="h-full bg-cover bg-center rounded-xl shadow-lg hover:scale-[1.02] transition-transform duration-500" data-alt="Vegetales orgánicos frescos en una mesa oscura" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDrZkpufPsfyZHlFK-KYGwa349Yd7611g9Z5yRxF4buNXbXVEGKo9x55_dyyqV9YmJAQOTThvwVIVbjo4dSktURNSBFTdW3ZIiFwBXDiZuIiH7AUVvEcAeSEo_S3BDxw1wc1AC1jEiiFHBAZ74zfdbC3rY2m73VLoVR559bVlEEese6BnsP2ID7KQOs7mobtoJsk3ec719wK_ENDlemR-fnuWHzUAZ34N52T0n2z8ccymR2Zi26EIBzfDX_s817pqjlVlVbP8JknvU');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Dishes Gallery -->
+    <section class="py-24 px-6 bg-background-dark" id="menu">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="serif-heading text-4xl md:text-5xl text-white mb-4">Creaciones de Autor</h2>
+                <p class="text-white/50 uppercase tracking-widest text-sm">Destacados de temporada de nuestro menú de degustación</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dish 1 -->
+                <div class="group relative overflow-hidden rounded-xl bg-charcoal border border-white/5 fade-in-up delay-100 shadow-xl">
+                    <div class="aspect-square bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Vieiras selladas con emulsión de azafrán" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCm7Av4gk-y24JgrhWxaUPaxDUkq9lJvfa-HQHAsS9xoSmVnMk5IsSiXbX2YQSGRG8SVT8E0xwyz8n69_kC_tnleZRz9rcglmTDAzmpS8i0e2siD1zMi61HZTUo9MBomALKpNzRv42tGrAhzEBhUTnkhnP0PIt35GHu9IUH2C-vl1Od5pmEhh7LDSYIAnOxNM8qs8-hieF_j52Lxb-eL3LnYRHHn_lSXYWRW-iE6y2eAYBZQNWIv0wndoeX0Zl-b4qwxICz6Wl9NMI');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                        <h3 class="serif-heading text-2xl text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Azafrán del Océano</h3>
+                        <p class="text-white/70 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Vieiras de Hokkaido, emulsión de azafrán, hinojo marino encurtido.</p>
+                        <span class="text-primary mt-4 font-bold translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">$42</span>
+                    </div>
+                </div>
+                <!-- Dish 2 -->
+                <div class="group relative overflow-hidden rounded-xl bg-charcoal border border-white/5 lg:translate-y-12 fade-in-up delay-200 shadow-xl">
+                    <div class="aspect-square bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Carne de wagyu ahumada con virutas de trufa" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC12H5CcwD35xaBXIbPBdkSdB6LN4qF0rs8JxqMFL-gfQAVqaUnBO5Yt1xCs-53brg8sv-9Gxoc5xsJiavLMB__wUAZWeBEj_90_I7rKFWu3aj8nAHYhFLUDvl-uV3tx8D8mD9mBSgeSgtJuy0XJeWrkyxhePbp-Nqv1eZYM_yNME3UlGHMiyVxI9KQx3Np8U8aWcI76UdJcxcLYHFVnKPYcLQHVA7BAS0cY2qAWViLsWEb8DMdrlgAg3TRlyIDRUVCqjCygO36nLs');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                        <h3 class="serif-heading text-2xl text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Wagyu de Medianoche</h3>
+                        <p class="text-white/70 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Wagyu A5, ceniza de carbón, trufa negra, jugo de médula ósea.</p>
+                        <span class="text-primary mt-4 font-bold translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">$120</span>
+                    </div>
+                </div>
+                <!-- Dish 3 -->
+                <div class="group relative overflow-hidden rounded-xl bg-charcoal border border-white/5 fade-in-up delay-300 shadow-xl">
+                    <div class="aspect-square bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Intrincado postre de chocolate con pan de oro" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAa1MztHsQwUZmvBIg9jA2AbUTFMB6TaqbI4PFoZKvfNm04gsyykz-_nmZcJ6ei_mTIh5xDNgkt3X9BAgrmsX2z_Bc9zVsqkucVIqopdInEwxtua7IUiCl27DYGglMddgOoae1EZB3P3oU1zPEFSOATh2w9axq1xPWmRIPm_ixexftwJgfz4Ju34NOO0Z5wfwm3Zn_kxQnmEJqisRrdx76bt0VOa3IbmAuHaur2RTvyQqQH410Q8BzXc6LmIzaIja3YJmUlNzfwC8Y');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                        <h3 class="serif-heading text-2xl text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Llamarada Solar</h3>
+                        <p class="text-white/70 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Esfera de chocolate negro, centro de naranja sanguina, oro comestible.</p>
+                        <span class="text-primary mt-4 font-bold translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">$28</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-32 text-center fade-in-up delay-200">
+                <a href="menu.html" class="inline-block border-b-2 border-primary text-primary pb-2 font-bold tracking-widest uppercase hover:text-white hover:border-white transition-all hover:-translate-y-1">Ver Menú Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-charcoal pt-24 pb-12 px-6 lg:px-20 border-t border-white/5 mt-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 fade-in-up">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">restaurant_menu</span>
+                        <h2 class="serif-heading text-2xl font-bold tracking-tight text-white">Lumina</h2>
+                    </div>
+                    <p class="text-white/50 max-w-sm mb-8">
+                        Únase a nosotros para una velada donde cada bocado es una obra maestra. Ubicados en el corazón del distrito de arte de la ciudad.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:-translate-y-1 transition-all" href="#">
+                            <span class="material-symbols-outlined text-white text-sm">alternate_email</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:-translate-y-1 transition-all" href="#">
+                            <span class="material-symbols-outlined text-white text-sm">public</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:-translate-y-1 transition-all" href="#">
+                            <span class="material-symbols-outlined text-white text-sm">chat_bubble</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Horarios</h4>
+                    <ul class="text-white/50 space-y-3 text-sm">
+                        <li>Mar - Jue: 5:00 PM - 10:00 PM</li>
+                        <li>Vie - Sáb: 5:00 PM - 11:30 PM</li>
+                        <li>Domingo: 4:00 PM - 9:00 PM</li>
+                        <li>Lunes: Cerrado</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Contacto</h4>
+                    <ul class="text-white/50 space-y-3 text-sm">
+                        <li>123 Culinary Lane, Arts District</li>
+                        <li>Ciudad de México, CDMX 06700</li>
+                        <li>+52 (55) 1234-5678</li>
+                        <li>hola@luminadining.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-12 text-center fade-in-up delay-200">
+                <p class="text-white/30 text-xs tracking-widest uppercase">© 2024 Lumina Dining. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+
+
+    <!-- Botón Flotante Volver al Portafolio -->
+    <a href="../../" 
+       style="position: fixed; bottom: 30px; right: 30px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: #0f172a; color: #ffffff; border-radius: 50%; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15); z-index: 99999; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid rgba(255,255,255,0.1);"
+       onmouseover="this.style.transform='scale(1.1) translateY(-5px)'; this.style.backgroundColor='#1e293b'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1)';"
+       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.backgroundColor='#0f172a'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15)';"
+       title="Volver al Inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+    </a>
+</body>
+</html>

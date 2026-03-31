@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Ubicación - El Faro del Puerto</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="bg-surface flex flex-col min-h-screen">
+
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+    <nav class="flex justify-between items-center px-6 lg:px-8 py-4 max-w-7xl mx-auto">
+        <a href="index.html" class="font-serif italic text-2xl text-blue-900 dark:text-blue-100">El Faro del Puerto</a>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="index.html">Inicio</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="menu.html">Menú</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="galeria.html">Galería</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="historia.html">Historia</a>
+            <a class="text-blue-900 dark:text-blue-300 font-bold border-b-2 border-teal-400 pb-1 font-sans uppercase tracking-wider text-sm" href="ubicacion.html">Ubicación</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="reservas.html" class="hidden md:block bg-gradient-to-r from-primary to-primary-container text-white px-6 py-2 rounded-md font-sans uppercase text-sm font-semibold hover:shadow-lg transition-all">Reservar</a>
+            <button id="menu-btn" class="md:hidden text-primary"><span class="material-symbols-outlined text-3xl">menu</span></button>
+        </div>
+    </nav>
+</header>
+<div id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center gap-8 border-t pt-20">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-primary"><span class="material-symbols-outlined text-3xl">close</span></button>
+    <a class="text-lg uppercase text-slate-600" href="index.html">Inicio</a>
+    <a class="text-lg uppercase text-slate-600" href="menu.html">Menú</a>
+    <a class="text-lg uppercase text-slate-600" href="galeria.html">Galería</a>
+    <a class="text-lg uppercase text-slate-600" href="historia.html">Historia</a>
+    <a class="text-lg uppercase text-primary font-bold" href="ubicacion.html">Ubicación</a>
+</div>
+
+<main class="flex-grow pt-32 pb-24">
+<section class="py-12 bg-surface-container-low min-h-screen">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col md:flex-row">
+            <div class="md:w-1/2 p-12 lg:p-16 flex flex-col justify-center">
+                <h2 class="text-4xl font-headline text-primary mb-8">Visítenos en el Puerto</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary">location_on</span>
+                        <div>
+                            <p class="font-bold text-primary font-body">Dirección</p>
+                            <p class="text-on-surface-variant">Av. de los Marinos #102, Zona Portuaria<br/>Veracruz, Ver. México</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary">schedule</span>
+                        <div>
+                            <p class="font-bold text-primary font-body">Horarios de Servicio</p>
+                            <p class="text-on-surface-variant">Lunes a Domingo: 12:00 PM – 11:00 PM</p>
+                            <p class="text-sm text-tertiary mt-1 font-semibold italic">Cocina cierra a las 10:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary">call</span>
+                        <div>
+                            <p class="font-bold text-primary font-body">Reservaciones</p>
+                            <p class="text-on-surface-variant">+52 (229) 123 4567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 h-96 md:h-auto min-h-[450px] relative">
+                <img class="w-full h-full object-cover grayscale opacity-80" alt="Mapa de ubicación" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6FmHUqIW4Ajng8v30ta1tnh7OX-H5tc64enFtVZXAolSxkG0YEZ4sIYQXR_VtDK-5IeaQ84VIWqbJCA9mVORnJdGfGXRRx8YVoLyDRmtf_X1FkwsI-S6lCwdasrPTLdjq6wGPV7iN3vVXV5mL95FNfm2cdchDUTdmhV2TxJR9Ez9Rpnv3KH8ZWFGlafoxuRoSxC4p5Q3Oos10PPK8J1hB7RUSc0Gm_R8ZX8-MbMCGqdFNOuuMppy56cUrXAbMPNKkVu0JxgY20cwy"/>
+                <div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+                    <div class="relative flex items-center justify-center">
+                        <span class="material-symbols-outlined text-tertiary text-6xl drop-shadow-lg relative z-10" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="w-full mt-auto border-t border-slate-200 bg-slate-50">
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-7xl mx-auto">
+        <div class="font-serif text-lg text-primary">El Faro del Puerto</div>
+        <div class="text-slate-500 font-sans text-sm tracking-tight">© 2024 El Faro del Puerto. Todos los derechos reservados.</div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

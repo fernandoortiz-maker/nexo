@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="light" lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Menú - The Artisanal Table</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="selection:bg-primary-fixed selection:text-on-primary-fixed flex flex-col min-h-screen">
+<nav class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-[#1b1d0e]/80 backdrop-blur-md shadow-[0_4px_30px_rgba(130,59,24,0.05)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+    <a href="index.html" class="text-2xl font-serif font-bold text-[#823b18] dark:text-[#a0522d] tracking-tighter">The Artisanal Table</a>
+    <div class="hidden md:flex gap-10">
+        <a class="text-[#54433c] dark:text-[#e4e4cc] hover:text-[#823b18] transition-colors font-serif tracking-tight" href="index.html">Inicio</a>
+        <a class="text-[#54433c] dark:text-[#e4e4cc] hover:text-[#823b18] transition-colors font-serif tracking-tight" href="nosotros.html">Nosotros</a>
+        <a class="text-[#823b18] dark:text-[#a0522d] font-bold border-b-2 border-[#823b18] pb-1 font-serif tracking-tight" href="menu.html">Menú</a>
+        <a class="text-[#54433c] dark:text-[#e4e4cc] hover:text-[#823b18] transition-colors font-serif tracking-tight" href="contacto.html">Contacto</a>
+    </div>
+    <div class="flex items-center gap-4">
+        <a href="contacto.html" class="hidden md:block bg-primary hover:bg-primary-container text-on-primary px-6 py-2 rounded-md font-body font-semibold transition-all duration-300 active:scale-95 shadow-sm">Haz tu Pedido</a>
+        <button id="menu-btn" class="md:hidden text-primary"><span class="material-symbols-outlined text-3xl">menu</span></button>
+    </div>
+</div>
+</nav>
+
+<div id="mobile-menu" class="fixed inset-0 bg-[#fbfbe2] z-40 hidden flex-col items-center justify-center gap-8 border-t pt-20">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-primary"><span class="material-symbols-outlined text-3xl">close</span></button>
+    <a class="text-xl uppercase text-[#54433c]" href="index.html">Inicio</a>
+    <a class="text-xl uppercase text-[#54433c]" href="nosotros.html">Nosotros</a>
+    <a class="text-xl uppercase font-bold text-primary" href="menu.html">Menú</a>
+    <a class="text-xl uppercase text-[#54433c]" href="contacto.html">Contacto</a>
+    <a class="text-lg uppercase text-white bg-primary px-8 py-3 rounded-md mt-4" href="contacto.html">Haz tu Pedido</a>
+</div>
+
+<main class="flex-grow pt-28">
+<section class="py-24 px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+            <div class="max-w-xl">
+                <span class="block text-primary font-label font-bold tracking-widest uppercase text-sm mb-6">El Horneo del Día</span>
+                <h2 class="text-5xl font-headline font-bold text-on-surface">Nuestras Creaciones</h2>
+            </div>
+            <p class="text-on-surface-variant font-body max-w-xs border-l-2 border-primary pl-6">Formado a mano y horneado fresco cada mañana a las 4:00 AM.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="group">
+                <div class="aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-xl mb-6 relative">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="pan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABdksLVjFxboBAREHt0WVIFpSoh7y6Gd-apjczSeRyDdR8x7UHOz74vXMCWk3jD7gANrKH05P2pJZa76UVp0nXcrgoTj_w_FNEt6AASLrun5mYL0MNEDtP5BwUmqOJ8nAsoTo9amXO8O8pcaGmuDcJg399U1qClRwlSvhyFr9csFzSRjkULYtNDbe2Xsiqfp-9epusUnZaoxpwjsD8MpVDSOPl-u86uNc80tMmthqjL5RZhnOKmQBgWDNQn7v6pl1RxVz0fVyhse45"/>
+                    <div class="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase">El más vendido</div>
+                </div>
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-headline font-bold">Masa Madre de la Casa</h3>
+                    <span class="text-primary font-bold text-lg font-body">$12.50</span>
+                </div>
+                <p class="text-on-surface-variant font-body mb-4 leading-relaxed">Nuestra hogaza insignia con 36 horas de fermentación, corteza caramelizada y miga silvestre.</p>
+                <span class="inline-flex items-center text-xs font-bold tracking-widest uppercase gap-2 text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Harina Orgánica</span>
+            </div>
+            <div class="group">
+                <div class="aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-xl mb-6 relative">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="croissants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzlDk55kuCWmfI-ekubGkGQSOKxCfVJQYb9SGzJQTfXek8woXoHnGZhGSOR5_CqmHJIGB-P72jow1xlyOK-C-OOAFrabMtpfX_6Kzcosccjg7o4B4hzJONUBtcK0U2z7YzYQPgr8xb13-lyUj--nvUfm4aeG2G5j3gpr5yO9hJXO--OA92IZsfey0R3ICylLOikt4g8SMAX4LduFA1-0W1zbZSXCCWceEqrh73YhUm7djhhpO8KKrQdm4KWe5_qA6KhxICLKtQKSbY"/>
+                </div>
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-headline font-bold">Croissants de Mantequilla</h3>
+                    <span class="text-primary font-bold text-lg font-body">$4.75</span>
+                </div>
+                <p class="text-on-surface-variant font-body mb-4 leading-relaxed">81 capas delicadas de masa con mantequilla de pastoreo, laminadas a mano durante tres días.</p>
+                <span class="inline-flex items-center text-xs font-bold tracking-widest uppercase gap-2 text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Mantequilla de Origen</span>
+            </div>
+            <div class="group">
+                <div class="aspect-[4/5] bg-surface-container-lowest overflow-hidden rounded-xl mb-6 relative">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="baguettes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCShMcqj_B0Q3OanUkC5FMHnXtmykUkfjGrvgatfAjGIVF37fZ8B8EBFK6Veib2L3Fwse5Fr6hmnumZe9zK6UiJGss7JHanFYrxFPLIzbRSy4nPySSZFcfO__GE9IId-xh5vq6gUO4W3Uf_7kTqtA27j290Fzay1uSWTu0fBgG9K7caFtPa5T-JvAT1vxBHeIYdaSM1mLMEs8nzw3GoJ3mqKOevLpD7wdWqH8wqH4KR-A4ydKhMPLQ-KuvWIK1B6clYORJsgQssBX_V"/>
+                </div>
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-headline font-bold">Baguette Artesanal</h3>
+                    <span class="text-primary font-bold text-lg font-body">$5.25</span>
+                </div>
+                <p class="text-on-surface-variant font-body mb-4 leading-relaxed">El clásico francés redefinido. Corteza crujiente y delgada con un interior aireado y alveolado.</p>
+                <span class="inline-flex items-center text-xs font-bold tracking-widest uppercase gap-2 text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Método Tradicional</span>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="bg-[#f5f5dc] dark:bg-[#2a2a1a] w-full py-12 mt-auto border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8">
+<div class="space-y-6">
+<span class="text-xl font-serif text-[#1b1d0e] dark:text-[#fbfbe2] font-bold">The Artisanal Table</span>
+<p class="font-sans text-[#54433c] dark:text-[#e4e4cc] leading-relaxed">Dedicados al oficio de la panadería tradicional y al sustento de nuestra comunidad local.</p>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-surface font-headline uppercase tracking-widest text-sm">Visítanos</h4>
+<div class="space-y-4 font-body text-on-surface-variant">
+<p class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">location_on</span> 124 Hearthstone Ave, Flour District</p>
+<p class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">schedule</span> Mié - Dom: 7:00 AM - 3:00 PM</p>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-surface font-headline uppercase tracking-widest text-sm">Enlaces Rápidos</h4>
+<ul class="space-y-3 font-body">
+<li><a class="text-[#54433c] hover:text-[#823b18] transition-colors" href="nosotros.html">Nosotros</a></li>
+<li><a class="text-[#54433c] hover:text-[#823b18] transition-colors" href="menu.html">El Menú</a></li>
+<li><a class="text-[#54433c] hover:text-[#823b18] transition-colors" href="contacto.html">Haz tu pedido</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/20 flex flex-col sm:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-sm font-body">© 2024 La Mesa Artesanal. Horneado con el corazón.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

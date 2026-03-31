@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="dark" lang="es-419">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Equipamiento - El Estudio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Be+Vietnam+Pro:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#df8eff",
+                        "secondary": "#2ff801",
+                        "tertiary": "#ff6b9b",
+                        "background": "#0e0e0e",
+                        "surface": "#0e0e0e",
+                        "surface-container-low": "#131313",
+                        "surface-container-highest": "#262626",
+                        "outline-variant": "#494847"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Be Vietnam Pro", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-white font-body selection:bg-tertiary selection:text-white relative overflow-x-hidden">
+    <div class="fixed inset-0 grain-overlay z-[100]"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0e0e0e]/80 backdrop-blur-xl border-b border-white/10 transition-all duration-300" id="main-header">
+        <div class="flex justify-between items-center w-full px-6 py-4 max-w-none">
+            <a href="index.html" class="text-2xl font-black uppercase tracking-tighter text-primary italic font-headline hover:scale-105 transition-transform">EL ESTUDIO</a>
+            
+            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+
+            <nav class="hidden md:flex gap-12 items-center">
+                <a class="text-white/70 hover:text-white transition-colors hover:skew-x-2 hover:text-secondary font-headline tracking-tight" href="index.html">EL ESTUDIO</a>
+                <a class="text-tertiary font-bold border-b-2 border-tertiary pb-1 font-headline tracking-tight transition-all" href="equipamiento.html">EQUIPAMIENTO</a>
+                <a class="text-white/70 hover:text-white transition-colors hover:skew-x-2 hover:text-secondary font-headline tracking-tight" href="trabajos.html">TRABAJOS</a>
+            </nav>
+            <button class="hidden md:block bg-primary text-black font-headline font-bold text-sm px-6 py-2 tracking-tighter hover:skew-x-2 transition-all">RESERVA TU SESIÓN</button>
+        </div>
+        
+        <nav id="mobile-menu" class="md:hidden hidden flex-col absolute top-full left-0 right-0 bg-[#0e0e0e]/95 backdrop-blur-xl border-b border-outline-variant/20 p-6 gap-6 shadow-2xl">
+            <a class="text-white/70 hover:text-white font-headline tracking-tight text-xl" href="index.html">EL ESTUDIO</a>
+            <a class="text-tertiary font-bold font-headline tracking-tight text-xl" href="equipamiento.html">EQUIPAMIENTO</a>
+            <a class="text-white/70 hover:text-white font-headline tracking-tight text-xl" href="trabajos.html">TRABAJOS</a>
+            <button class="bg-primary text-black font-headline font-bold text-lg px-6 py-3 tracking-tighter mt-4 w-full">RESERVA TU SESIÓN</button>
+        </nav>
+    </header>
+
+    <main class="pt-[100px] mb-24">
+        <!-- Hero Inner -->
+        <section class="py-20 px-6 max-w-7xl mx-auto text-center relative">
+            <h1 class="font-headline text-5xl md:text-8xl font-black uppercase tracking-tighter mb-4 glitch" data-text="GEAR LIST">GEAR LIST</h1>
+            <p class="text-white/60 text-lg md:text-xl max-w-2xl mx-auto font-light fade-in-up">El arsenal analógico y digital que esculpe el sonido de la industria. Cada pieza seleccionada meticulosamente.</p>
+        </section>
+
+        <!-- Gear Grid Categories -->
+        <section class="px-6 max-w-7xl mx-auto space-y-24">
+            <!-- Microphones -->
+            <div class="fade-in-up">
+                <div class="flex items-center gap-4 mb-10 border-b border-white/10 pb-4">
+                    <span class="material-symbols-outlined text-4xl text-secondary">mic</span>
+                    <h2 class="font-headline text-3xl font-bold uppercase tracking-widest text-secondary">Microfonía</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-surface-container-low p-8 border border-white/5 hover:border-secondary transition-colors group">
+                        <img src="images/mic.png" alt="Mic" class="w-full h-48 object-cover grayscale opacity-50 mb-6 group-hover:grayscale-0 group-hover:opacity-100 transition-all rounded">
+                        <h3 class="font-headline text-xl font-bold mb-2">Sony C-800G</h3>
+                        <p class="text-white/50 text-sm">El estándar de oro para voces urbanas y pop. Brillo sedoso inigualable.</p>
+                    </div>
+                    <div class="bg-surface-container-low p-8 border border-white/5 hover:border-secondary transition-colors group">
+                        <h3 class="font-headline text-xl font-bold mb-2">Neumann U87 Ai</h3>
+                        <p class="text-white/50 text-sm">El todoterreno clásico. Cuerpo, presencia y fidelidad absoluta.</p>
+                    </div>
+                    <div class="bg-surface-container-low p-8 border border-white/5 hover:border-secondary transition-colors group">
+                        <h3 class="font-headline text-xl font-bold mb-2">Shure SM7B</h3>
+                        <p class="text-white/50 text-sm">El arma secreta para flows agresivos y dinámicos extremos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outboard & Preamps -->
+            <div class="fade-in-up">
+                <div class="flex items-center gap-4 mb-10 border-b border-white/10 pb-4">
+                    <span class="material-symbols-outlined text-4xl text-primary">video_label</span>
+                    <h2 class="font-headline text-3xl font-bold uppercase tracking-widest text-primary">Outboard & Preamps</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-surface-container-low p-8 border border-white/5 hover:border-primary transition-colors group relative overflow-hidden">
+                        <h3 class="font-headline text-xl font-bold mb-2 text-primary">Avalon VT-737sp</h3>
+                        <p class="text-white/50 text-sm">Canal tubular con EQ y compresor óptico. El sonido cálido que buscas en cada toma.</p>
+                    </div>
+                    <div class="bg-surface-container-low p-8 border border-white/5 hover:border-primary transition-colors group">
+                        <h3 class="font-headline text-xl font-bold mb-2 text-primary">Neve 1073 DPA</h3>
+                        <p class="text-white/50 text-sm">Los transitorios más legendarios. Punch británico inconfundible.</p>
+                    </div>
+                    <div class="bg-surface-container-low p-8 border border-white/5 hover:border-primary transition-colors group">
+                        <h3 class="font-headline text-xl font-bold mb-2 text-primary">Universal Audio 1176LN</h3>
+                        <p class="text-white/50 text-sm">Control rápido, agresivo en las voces, pegamento en las baterías.</p>
+                    </div>
+                    <div class="bg-surface-container-low p-8 border border-white/5 hover:border-primary transition-colors group">
+                        <h3 class="font-headline text-xl font-bold mb-2 text-primary">Tube-Tech CL 1B</h3>
+                        <p class="text-white/50 text-sm">Compresión óptica suave, el secreto mejor guardado para voces de nivel Billboard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitoring -->
+            <div class="fade-in-up">
+                <div class="flex items-center gap-4 mb-10 border-b border-white/10 pb-4">
+                    <span class="material-symbols-outlined text-4xl text-tertiary">speaker</span>
+                    <h2 class="font-headline text-3xl font-bold uppercase tracking-widest text-tertiary">Monitoreo</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-surface-container-highest p-10 flex flex-col justify-between border-l-4 border-tertiary">
+                        <div>
+                            <h3 class="font-headline text-2xl font-bold mb-2">Focal Trio11 Be</h3>
+                            <p class="text-white/70 text-base">La verdad absoluta en el rango completo. Bajas frecuencias sin mentiras, para el trap y reggaeton definitivo.</p>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-highest p-10 flex flex-col justify-between border-l-4 border-tertiary">
+                        <div>
+                            <h3 class="font-headline text-2xl font-bold mb-2">Yamaha NS-10M</h3>
+                            <p class="text-white/70 text-base">Si suena bien aquí, sonará bien en todos lados. El estándar de la mezcla clínica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full flex flex-col gap-8 px-6 py-12 bg-black border-t border-outline-variant/15">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-secondary font-black font-headline text-3xl tracking-tighter italic">EL ESTUDIO</div>
+            <div class="flex gap-8 md:gap-12">
+                <a class="text-white/50 hover:text-primary transition-colors font-headline text-sm tracking-widest uppercase" href="#">INSTAGRAM</a>
+                <a class="text-white/50 hover:text-secondary transition-colors font-headline text-sm tracking-widest uppercase" href="#">SPOTIFY</a>
+                <a class="text-white/50 hover:text-tertiary transition-colors font-headline text-sm tracking-widest uppercase" href="#">YOUTUBE</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Trigger visibility straight away for components on secondary pages
+        setTimeout(() => {
+            document.querySelectorAll('.fade-in-up').forEach(el => el.classList.add('visible'));
+        }, 100);
+    </script>
+</body>
+</html>

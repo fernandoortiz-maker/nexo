@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="dark" lang="es-419">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Trabajos - El Estudio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Be+Vietnam+Pro:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#df8eff",
+                        "secondary": "#2ff801",
+                        "tertiary": "#ff6b9b",
+                        "background": "#0e0e0e",
+                        "surface": "#0e0e0e",
+                        "surface-container-low": "#131313",
+                        "surface-container-highest": "#262626",
+                        "outline-variant": "#494847"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Be Vietnam Pro", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-white font-body selection:bg-primary selection:text-black relative overflow-x-hidden">
+    <div class="fixed inset-0 grain-overlay z-[100]"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0e0e0e]/80 backdrop-blur-xl border-b border-white/10 transition-all duration-300" id="main-header">
+        <div class="flex justify-between items-center w-full px-6 py-4 max-w-none">
+            <a href="index.html" class="text-2xl font-black uppercase tracking-tighter text-primary italic font-headline hover:scale-105 transition-transform">EL ESTUDIO</a>
+            
+            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+
+            <nav class="hidden md:flex gap-12 items-center">
+                <a class="text-white/70 hover:text-white transition-colors hover:skew-x-2 hover:text-secondary font-headline tracking-tight" href="index.html">EL ESTUDIO</a>
+                <a class="text-white/70 hover:text-white transition-colors hover:skew-x-2 hover:text-secondary font-headline tracking-tight" href="equipamiento.html">EQUIPAMIENTO</a>
+                <a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-headline tracking-tight transition-all" href="trabajos.html">TRABAJOS</a>
+            </nav>
+            <button class="hidden md:block bg-primary text-black font-headline font-bold text-sm px-6 py-2 tracking-tighter hover:skew-x-2 transition-all">RESERVA TU SESIÓN</button>
+        </div>
+        
+        <nav id="mobile-menu" class="md:hidden hidden flex-col absolute top-full left-0 right-0 bg-[#0e0e0e]/95 backdrop-blur-xl border-b border-outline-variant/20 p-6 gap-6 shadow-2xl">
+            <a class="text-white/70 hover:text-white font-headline tracking-tight text-xl" href="index.html">EL ESTUDIO</a>
+            <a class="text-white/70 hover:text-white font-headline tracking-tight text-xl" href="equipamiento.html">EQUIPAMIENTO</a>
+            <a class="text-secondary font-bold font-headline tracking-tight text-xl" href="trabajos.html">TRABAJOS</a>
+            <button class="bg-primary text-black font-headline font-bold text-lg px-6 py-3 tracking-tighter mt-4 w-full">RESERVA TU SESIÓN</button>
+        </nav>
+    </header>
+
+    <main class="pt-[100px] mb-24">
+        <!-- Hero Inner -->
+        <section class="py-20 px-6 max-w-7xl mx-auto text-center relative">
+            <h1 class="font-headline text-5xl md:text-8xl font-black uppercase tracking-tighter mb-4 glitch" data-text="PORTAFOLIO">PORTAFOLIO</h1>
+            <p class="text-white/60 text-lg md:text-xl max-w-2xl mx-auto font-light fade-in-up">Más de 100 millones de streams acumulados. El soundtrack de la calle hecho realidad. Dale play y comprueba el nivel.</p>
+        </section>
+
+        <!-- Dynamic Grid of Works -->
+        <section class="px-6 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Work 1 -->
+                <div class="group relative overflow-hidden rounded fade-in-up">
+                    <img src="images/album1.png" alt="Work" class="w-full aspect-square object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="inline-block bg-primary text-black text-[10px] font-bold px-2 py-1 uppercase tracking-widest mb-3">Mezcla / Master</span>
+                        <h3 class="font-headline text-2xl font-bold uppercase translate-y-4 group-hover:translate-y-0 transition-transform duration-300">CALLEJERO FINO</h3>
+                        <p class="text-white/70 text-sm translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Duki & YSY A</p>
+                    </div>
+                </div>
+
+                <!-- Work 2 -->
+                <div class="group relative overflow-hidden rounded fade-in-up delay-100">
+                    <img src="images/album2.png" alt="Work" class="w-full aspect-square object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="inline-block bg-secondary text-black text-[10px] font-bold px-2 py-1 uppercase tracking-widest mb-3">Grabación Completa</span>
+                        <h3 class="font-headline text-2xl font-bold uppercase translate-y-4 group-hover:translate-y-0 transition-transform duration-300">NEON VIBES</h3>
+                        <p class="text-white/70 text-sm translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Jhayco - EP Completo</p>
+                    </div>
+                </div>
+
+                <!-- Work 3 -->
+                <div class="group relative overflow-hidden rounded fade-in-up delay-200">
+                    <img src="images/album3.png" alt="Work" class="w-full aspect-square object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="inline-block bg-tertiary text-black text-[10px] font-bold px-2 py-1 uppercase tracking-widest mb-3">Mastering</span>
+                        <h3 class="font-headline text-2xl font-bold uppercase translate-y-4 group-hover:translate-y-0 transition-transform duration-300">ROSE GOLD</h3>
+                        <p class="text-white/70 text-sm translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Cazzu ft. Mora</p>
+                    </div>
+                </div>
+
+                <!-- Work 4 -->
+                <div class="group relative overflow-hidden rounded fade-in-up delay-300">
+                    <img src="images/album1.png" alt="Work" class="w-full aspect-square object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="inline-block bg-primary text-black text-[10px] font-bold px-2 py-1 uppercase tracking-widest mb-3">Vocal Prod</span>
+                        <h3 class="font-headline text-2xl font-bold uppercase translate-y-4 group-hover:translate-y-0 transition-transform duration-300">MIDNIGHT</h3>
+                        <p class="text-white/70 text-sm translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Feid</p>
+                    </div>
+                </div>
+
+                <!-- Work 5 -->
+                <div class="group relative overflow-hidden rounded fade-in-up delay-400">
+                    <img src="images/album2.png" alt="Work" class="w-full aspect-square object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="inline-block bg-secondary text-black text-[10px] font-bold px-2 py-1 uppercase tracking-widest mb-3">Mezcla / Master</span>
+                        <h3 class="font-headline text-2xl font-bold uppercase translate-y-4 group-hover:translate-y-0 transition-transform duration-300">TRAP HOUSE</h3>
+                        <p class="text-white/70 text-sm translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Eladio Carrión</p>
+                    </div>
+                </div>
+
+                <!-- Work 6 -->
+                <div class="group relative overflow-hidden rounded fade-in-up delay-500">
+                    <div class="w-full aspect-square bg-surface-container-highest flex items-center justify-center border border-white/5 hover:border-white/20 transition-colors">
+                        <div class="text-center">
+                            <h3 class="font-headline text-4xl font-black italic text-white/50 mb-2">Y TÚ?</h3>
+                            <p class="text-sm font-headline uppercase tracking-widest text-primary">Se parte del legado</p>
+                            <button class="mt-6 border border-white text-white px-6 py-2 uppercase font-bold text-xs hover:bg-white hover:text-black transition-colors">Agendar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full flex flex-col gap-8 px-6 py-12 bg-black border-t border-outline-variant/15">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-secondary font-black font-headline text-3xl tracking-tighter italic">EL ESTUDIO</div>
+            <div class="flex gap-8 md:gap-12">
+                <a class="text-white/50 hover:text-primary transition-colors font-headline text-sm tracking-widest uppercase" href="#">INSTAGRAM</a>
+                <a class="text-white/50 hover:text-secondary transition-colors font-headline text-sm tracking-widest uppercase" href="#">SPOTIFY</a>
+                <a class="text-white/50 hover:text-tertiary transition-colors font-headline text-sm tracking-widest uppercase" href="#">YOUTUBE</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        setTimeout(() => {
+            document.querySelectorAll('.fade-in-up').forEach(el => el.classList.add('visible'));
+        }, 100);
+    </script>
+</body>
+</html>

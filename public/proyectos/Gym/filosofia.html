@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KINETIC VOID // FILOSOFÍA</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config" src="js/tailwind-config.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="overflow-x-hidden">
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-text">Loading_Void...</div>
+    </div>
+
+    <!-- HUD Overlay Peripherals -->
+    <div class="fixed inset-0 pointer-events-none z-[100] border-[12px] border-transparent">
+        <div class="absolute top-4 left-10 font-mono text-[10px] text-outline tracking-[0.3em] uppercase hidden md:block">
+            System_Status: <span class="text-primary-container">Optimal</span> // Auth_Token: 0x9928X
+        </div>
+        <div class="absolute bottom-4 right-10 font-mono text-[10px] text-outline tracking-[0.3em] uppercase hidden md:block">
+            Void_Protocol_V.4.2 // Kinetic_Link: Stable
+        </div>
+    </div>
+
+    <!-- TopAppBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-md flex justify-between items-center px-4 md:px-10 py-6 border-b border-[#8E90A2]/10 transition-all">
+        <a href="index.html" class="text-2xl md:text-3xl font-black italic tracking-tighter text-[#2E5BFF] font-['Space_Grotesk'] uppercase hover:scale-105 transition-transform">
+            KINETIC VOID
+        </a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="entrenamiento.html">ENTRENAMIENTO</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="membresias.html">MEMBRESÍAS</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="filosofia.html">FILOSOFÍA</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="sedes.html">SEDES</a>
+        </div>
+        <a href="membresias.html" class="bg-[#2E5BFF] text-white px-4 md:px-6 py-2 font-['Space_Grotesk'] font-bold uppercase tracking-tighter kinetic-glow active:scale-95 transition-all text-sm md:text-base">
+            ÚNETE AL VACÍO
+        </a>
+    </nav>
+
+    <!-- Body Architects (Trainers) - Asymmetric Layout -->
+    <section class="pt-32 pb-24 px-4 md:px-10 bg-surface-container-lowest overflow-hidden min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20 items-center">
+            <div class="w-full md:w-1/2 relative reveal-left">
+                <div class="absolute -top-10 -left-10 text-[8rem] md:text-[12rem] font-black text-white/5 font-headline pointer-events-none uppercase leading-none">ELITE</div>
+                <img alt="Arquitecto corporal principal" class="w-full grayscale brightness-75 hover:grayscale-0 transition-all duration-700 relative z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2k0z_inPZIBsWbn2E7hzE0jOBXz7dAx_KjmoNRZZuqXeVvA_lFGZHwG7pnXUrly0U2mAweiuJc7F3i2lMb7Yo3Bd4ZEoCoaLUhSFH3mW3rgg_S46LCiglMl7xigjOgz7owJoa6LsdMtw5WwQCDgvnbdpHrtgkSrqp0geu10cEVgWbwstM6kxpxY5KqnVftzf77rGvTFrzBPp-DSH6HStXH_HAEjOUvkCVFatvrjd6im28ukGJZwPHRQkyj2O2rI5DtsiXe5K7FLI" />
+                <div class="absolute -bottom-6 -right-6 bg-tertiary-container p-8 z-20 hover:-translate-y-2 transition-transform">
+                    <div class="font-mono text-xs text-white tracking-[0.3em] mb-2 uppercase">Head_Architect</div>
+                    <div class="text-3xl font-black font-headline uppercase leading-none">DRAKO VOID</div>
+                </div>
+            </div>
+            
+            <div class="w-full md:w-1/2 space-y-12 reveal-right">
+                <div>
+                    <span class="font-mono text-tertiary-container text-xs tracking-widest uppercase mb-2 block">// LOS_ARQUITECTOS</span>
+                    <h2 class="text-5xl md:text-7xl font-black font-headline uppercase glitch-hover text-white">Diseñadores de Fisiología</h2>
+                    <p class="mt-8 text-outline text-lg font-body leading-relaxed max-w-lg">
+                        Nuestros entrenadores no te motivan. Te reprograman. Especialistas en biomecánica táctica y optimización metabólica.
+                    </p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center justify-between border-b border-outline/10 pb-4 group cursor-pointer hover:border-primary-container transition-all">
+                        <span class="text-2xl font-black font-headline group-hover:text-primary-container transition-colors uppercase text-white">NOVA // CYCLING</span>
+                        <span class="font-mono text-xs text-outline group-hover:text-primary-container transition-colors">LVL_99</span>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-outline/10 pb-4 group cursor-pointer hover:border-primary-container transition-all delay-100">
+                        <span class="text-2xl font-black font-headline group-hover:text-primary-container transition-colors uppercase text-white">AXEL // STRENGTH</span>
+                        <span class="font-mono text-xs text-outline group-hover:text-primary-container transition-colors">LVL_MAX</span>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-outline/10 pb-4 group cursor-pointer hover:border-primary-container transition-all delay-200">
+                        <span class="text-2xl font-black font-headline group-hover:text-primary-container transition-colors uppercase text-white">KIRA // RECOVERY</span>
+                        <span class="font-mono text-xs text-outline group-hover:text-primary-container transition-colors">LVL_85</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0E0E0E] flex flex-col md:flex-row justify-between items-center px-10 py-12 w-full border-t border-[#8E90A2]/15">
+        <div class="mb-8 md:mb-0 reveal-left">
+            <div class="text-lg font-bold text-[#2E5BFF] font-headline uppercase tracking-tighter mb-2">KINETIC VOID</div>
+            <p class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2]">© 2024 KINETIC VOID // SYSTEM_ACTIVE</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 reveal-right">
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">INSTAGRAM</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">SPOTIFY</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">TIKTOK</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">LEGAL</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">PRIVACIDAD</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

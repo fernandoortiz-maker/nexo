@@ -1,0 +1,278 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 2rem 60px;
+    min-height: 100vh;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.mainTitle {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #888;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1.2fr;
+    }
+}
+
+/* Trust Section */
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.trustCard {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2.5rem;
+    border-radius: 20px;
+}
+
+.trustCard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.trustList {
+    list-style: none;
+}
+
+.trustList li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.check {
+    width: 24px;
+    height: 24px;
+    background: #6366f1;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.trustList strong {
+    display: block;
+    color: white;
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.trustList p {
+    color: #888;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.quickContact {
+    margin-top: 1rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.label {
+    font-size: 0.8rem;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.value {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Form Section */
+.form {
+    background: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 24px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.formHeader {
+    margin-bottom: 2.5rem;
+}
+
+.formHeader h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.formHeader p {
+    color: #666;
+}
+
+.formGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .formGroup {
+        grid-template-columns: 1fr;
+    }
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.field label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ccc;
+    margin-left: 0.5rem;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.field select option {
+    background-color: #0f0f0f;
+    /* Ensure options have dark background */
+    color: white;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 1.2rem;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.submitBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* FAQ Section */
+.faqSection {
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 4rem;
+}
+
+.faqTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.faqGrid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faqItem {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.faqQuestion {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faqAnswer {
+    padding: 0 1.5rem 1.5rem;
+    color: #888;
+    line-height: 1.6;
+}
+
+.toggleIcon {
+    font-size: 1.5rem;
+    color: #6366f1;
+}

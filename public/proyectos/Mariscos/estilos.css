@@ -1,0 +1,3 @@
+body { font-family: 'Manrope', sans-serif; background-color: #f9f9f9; color: #1a1c1c; }
+h1, h2, h3, .serif { font-family: 'Noto Serif', serif; }
+.glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }

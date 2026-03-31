@@ -1,0 +1,78 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 0.5rem 0;
+    /* Reduced from 1rem */
+    transition: all 0.3s ease;
+    background: rgba(5, 11, 8, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    /* Reduced from 1.8rem */
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logoImage {
+    height: 50px;
+    /* Reduced from 70px */
+    width: auto;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.link {
+    color: var(--foreground);
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    font-weight: 500;
+}
+
+.link:hover {
+    opacity: 1;
+    color: var(--primary);
+}
+
+.loginBtn {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--foreground);
+    padding: 0.5rem 1.5rem;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.loginBtn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 0 15px var(--primary-glow);
+}

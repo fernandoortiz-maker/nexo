@@ -1,0 +1,65 @@
+[
+    {
+        "id": "Estudio_musica",
+        "title": "Estudio de Música",
+        "category": "corporativos",
+        "price": null,
+        "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80",
+        "description": "Plantilla profesional para estudios de grabación y producción musical.",
+        "url": "/proyectos/Estudio_musica/index.html"
+    },
+    {
+        "id": "Gym",
+        "title": "Gimnasio PowerFit",
+        "category": "gimnasios",
+        "price": null,
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
+        "description": "Diseño enérgico para gimnasios y entrenadores personales.",
+        "url": "/proyectos/Gym/index.html"
+    },
+    {
+        "id": "Heladeria",
+        "title": "Heladería Artesanal",
+        "category": "restaurantes",
+        "price": null,
+        "image": "https://images.unsplash.com/photo-1559703248-dcaaec9fab78?w=800&q=80",
+        "description": "Sitio web de un local de postres refrescante y visualmente atractivo.",
+        "url": "/proyectos/Heladeria/index.html"
+    },
+    {
+        "id": "Mariscos",
+        "title": "Marisquería del Mar",
+        "category": "restaurantes",
+        "price": null,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&q=80",
+        "description": "Un diseño tematizado para restaurantes de mariscos y comida playera.",
+        "url": "/proyectos/Mariscos/index.html"
+    },
+    {
+        "id": "Panaderia",
+        "title": "Panadería Tradicional",
+        "category": "tiendas",
+        "price": null,
+        "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80",
+        "description": "Plantilla acogedora para panaderías y reposterías.",
+        "url": "/proyectos/Panaderia/index.html"
+    },
+    {
+        "id": "Pizzeria",
+        "title": "Pizzería Express",
+        "category": "restaurantes",
+        "price": null,
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80",
+        "description": "Diseño veloz y con apetito para ventas de pizza con sistema de menú.",
+        "url": "/proyectos/Pizzeria/index.html"
+    },
+    {
+        "id": "Restaurante",
+        "title": "Restaurante Gourmet",
+        "category": "restaurantes",
+        "price": null,
+        "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
+        "description": "Elegancia y sabor reunidos en una web corporativa impecable.",
+        "url": "/proyectos/Restaurante/index.html"
+    }
+]

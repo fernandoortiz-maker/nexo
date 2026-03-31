@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KINETIC VOID // ENTRENAMIENTO</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config" src="js/tailwind-config.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="overflow-x-hidden">
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-text">Loading_Void...</div>
+    </div>
+
+    <!-- HUD Overlay Peripherals -->
+    <div class="fixed inset-0 pointer-events-none z-[100] border-[12px] border-transparent">
+        <div class="absolute top-4 left-10 font-mono text-[10px] text-outline tracking-[0.3em] uppercase hidden md:block">
+            System_Status: <span class="text-primary-container">Optimal</span> // Auth_Token: 0x9928X
+        </div>
+        <div class="absolute bottom-4 right-10 font-mono text-[10px] text-outline tracking-[0.3em] uppercase hidden md:block">
+            Void_Protocol_V.4.2 // Kinetic_Link: Stable
+        </div>
+    </div>
+
+    <!-- TopAppBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-md flex justify-between items-center px-4 md:px-10 py-6 border-b border-[#8E90A2]/10 transition-all">
+        <a href="index.html" class="text-2xl md:text-3xl font-black italic tracking-tighter text-[#2E5BFF] font-['Space_Grotesk'] uppercase hover:scale-105 transition-transform">
+            KINETIC VOID
+        </a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="entrenamiento.html">ENTRENAMIENTO</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="membresias.html">MEMBRESÍAS</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="filosofia.html">FILOSOFÍA</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="sedes.html">SEDES</a>
+        </div>
+        <a href="membresias.html" class="bg-[#2E5BFF] text-white px-4 md:px-6 py-2 font-['Space_Grotesk'] font-bold uppercase tracking-tighter kinetic-glow active:scale-95 transition-all text-sm md:text-base">
+            ÚNETE AL VACÍO
+        </a>
+    </nav>
+
+    <!-- Training Systems - Bento Grid -->
+    <section class="pt-32 pb-24 px-4 md:px-10 bg-surface min-h-screen">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4 reveal-left">
+                <div>
+                    <span class="font-mono text-primary-container text-xs tracking-widest uppercase mb-2 block">// MÓDULOS_OPERATIVOS</span>
+                    <h2 class="text-5xl md:text-7xl font-black font-headline uppercase glitch-hover">Sistemas de <br />Entrenamiento</h2>
+                </div>
+                <div class="text-left md:text-right max-w-xs text-outline text-xs uppercase tracking-widest leading-relaxed">
+                    Selecciona tu protocolo. Cada sistema está optimizado para la destrucción de debilidad.
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+                <!-- Boxing Glitch -->
+                <div class="md:col-span-8 group relative aspect-[16/9] md:aspect-auto md:h-[500px] overflow-hidden bg-surface-container-low border-l-4 border-primary-container cursor-pointer reveal">
+                    <img alt="Boxeador en ambiente neon" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTZHXIigQCSdD56oBnwnA0PsrNQ4HYSTucSdzCDd9Aspavmv9eydEcY9NzfJxiFe6Kid9c6KhZ92KUG3sCirshngwJvtwpJP27l5tf4X4-y6hv9hsmizmVslEO0L6I5QYYxChz4L-grYZmWfAMNf73bRJ-qkmBvj3Q3R78G890PwdEEjnDypXky-6Q6mBIsi2h2QGa0315a1i3jcg8lCV4mBgyk7U432qh1Clm7MKzl0XljA6Q0lwTyP25cNJwauKX8WEOGsNf-rw" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80"></div>
+                    <div class="absolute bottom-8 left-8">
+                        <h3 class="text-4xl font-black font-headline uppercase mb-2 text-white">Boxing Glitch</h3>
+                        <p class="text-outline text-sm font-mono max-w-sm">COMBATE TÁCTICO // REFLEJOS NEURONALES // 800 CAL/HR</p>
+                    </div>
+                    <div class="absolute top-8 right-8 text-primary-container group-hover:translate-x-2 transition-transform">
+                        <span class="material-symbols-outlined text-4xl">arrow_forward</span>
+                    </div>
+                </div>
+
+                <!-- Neon Strength -->
+                <div class="md:col-span-4 group relative aspect-square overflow-hidden bg-surface-container-low cursor-pointer reveal delay-100">
+                    <img alt="Levantamiento de pesas intenso" class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtZpDF1IwRKkVf-on4ghB3BbQ7DBcpusg4UpZy8BUBBKR5woWbS8m3B67lBjY8S9COtpNckVnBLNP_AWOscOYS8sQA5DaaoY6bzaVuo5oE57aYs-K3bUCbrFwN9A21S2Sx_2gLgtVHeLCDLJg4XBVaS7ih_3htEE2NPTAmgRokqRg7x9dXFPdSBV0jEczL5zoorI7rvbj7N42BpaTJA27UH2LmA1BxfrvqaCSGWAYIknObORUf15YymMucISw79z9N40666emH_lo" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-tertiary-container/40 to-transparent"></div>
+                    <div class="absolute bottom-8 left-8">
+                        <h3 class="text-3xl font-black font-headline uppercase mb-2 text-white">Neon Strength</h3>
+                        <p class="text-outline text-xs font-mono">PODER BRUTO // HIPERTROFIA // CARGA MÁXIMA</p>
+                    </div>
+                </div>
+
+                <!-- Voids Cycle -->
+                <div class="md:col-span-4 group relative aspect-square overflow-hidden bg-surface-container-low cursor-pointer reveal">
+                    <img alt="Ciclismo indoor alta intensidad" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD__v2S4nKsBrWgxWKheOuQMzaTtmcO3OzTRXmEv6r-u29yNZhU68-ngTiyBUsspJ5NSj7NPVJ9l9t-z8uv4mhu3WaUisuZOqS4BT3Z1e4ogJPM3EB4HHz1rwP8aePRtAe-doSZUOe-l7UBFFBnBjG5PSH2r439BoDT0Yf3lC1HuiPNR5W2MlPSDEYP_RtEZ3gcAUVM7k7kMYbbgpH2-rqwMeIkj5jIKX2RuNPXoU3pcB9H4AGvUioGALIQqKZ97iW_xqjVVoKrLTM" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-container/40 to-transparent"></div>
+                    <div class="absolute bottom-8 left-8">
+                        <h3 class="text-3xl font-black font-headline uppercase mb-2 text-white">Voids Cycle</h3>
+                        <p class="text-outline text-xs font-mono">KINETIC CARDIO // FRECUENCIA CRÍTICA</p>
+                    </div>
+                </div>
+
+                <!-- More Stats -->
+                <div class="md:col-span-8 bg-surface-container flex flex-col justify-center p-12 border-l-4 border-tertiary-container reveal delay-100">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div class="hover:-translate-y-2 transition-transform">
+                            <div class="text-4xl font-black font-headline text-tertiary-container">24/7</div>
+                            <div class="text-[10px] font-mono text-outline uppercase tracking-widest">Acceso_Sistema</div>
+                        </div>
+                        <div class="hover:-translate-y-2 transition-transform delay-100">
+                            <div class="text-4xl font-black font-headline text-white">450+</div>
+                            <div class="text-[10px] font-mono text-outline uppercase tracking-widest">Bio_Sensores</div>
+                        </div>
+                        <div class="hover:-translate-y-2 transition-transform delay-200">
+                            <div class="text-4xl font-black font-headline text-primary-container">0</div>
+                            <div class="text-[10px] font-mono text-outline uppercase tracking-widest">Excusas</div>
+                        </div>
+                        <div class="hover:-translate-y-2 transition-transform delay-300">
+                            <div class="text-4xl font-black font-headline text-white">MAX</div>
+                            <div class="text-[10px] font-mono text-outline uppercase tracking-widest">Rendimiento</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center reveal">
+                <a href="membresias.html" class="bg-primary-container text-white px-10 py-5 font-headline font-black text-xl uppercase tracking-tighter kinetic-glow inline-block">
+                    ACTIVAR PROTOCOLO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0E0E0E] flex flex-col md:flex-row justify-between items-center px-10 py-12 w-full border-t border-[#8E90A2]/15">
+        <div class="mb-8 md:mb-0 reveal-left">
+            <div class="text-lg font-bold text-[#2E5BFF] font-headline uppercase tracking-tighter mb-2">KINETIC VOID</div>
+            <p class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2]">© 2024 KINETIC VOID // SYSTEM_ACTIVE</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 reveal-right">
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">INSTAGRAM</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">SPOTIFY</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">TIKTOK</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">LEGAL</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">PRIVACIDAD</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

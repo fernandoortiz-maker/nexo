@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1023",
+        "client": "Restaurante Sabor",
+        "email": "contacto@sabor.com",
+        "service": "Web Corporativa",
+        "date": "2026-01-20",
+        "status": "pending",
+        "amount": 450
+    },
+    {
+        "id": "1022",
+        "client": "Gym FitPro",
+        "email": "info@fitpro.com",
+        "service": "Landing Page",
+        "date": "2026-01-19",
+        "status": "process",
+        "amount": 300
+    },
+    {
+        "id": "1021",
+        "client": "Consultorio Dental",
+        "email": "dr@consultorio.com",
+        "service": "E-commerce",
+        "date": "2026-01-18",
+        "status": "completed",
+        "amount": 850
+    },
+    {
+        "id": "1020",
+        "client": "Boutique Luna",
+        "email": "hola@luna.com",
+        "service": "Catálogo",
+        "date": "2026-01-18",
+        "status": "process",
+        "amount": 550
+    },
+    {
+        "id": "1019",
+        "client": "Abogados & Asoc.",
+        "email": "legal@abogados.com",
+        "service": "Web Corporativa",
+        "date": "2026-01-15",
+        "status": "completed",
+        "amount": 450
+    }
+]

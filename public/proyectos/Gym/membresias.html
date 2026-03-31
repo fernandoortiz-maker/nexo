@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KINETIC VOID // MEMBRESÍAS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config" src="js/tailwind-config.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="overflow-x-hidden">
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-text">Loading_Void...</div>
+    </div>
+
+    <!-- HUD Overlay Peripherals -->
+    <div class="fixed inset-0 pointer-events-none z-[100] border-[12px] border-transparent">
+        <div class="absolute top-4 left-10 font-mono text-[10px] text-outline tracking-[0.3em] uppercase hidden md:block">
+            System_Status: <span class="text-primary-container">Optimal</span> // Auth_Token: 0x9928X
+        </div>
+        <div class="absolute bottom-4 right-10 font-mono text-[10px] text-outline tracking-[0.3em] uppercase hidden md:block">
+            Void_Protocol_V.4.2 // Kinetic_Link: Stable
+        </div>
+    </div>
+
+    <!-- TopAppBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-md flex justify-between items-center px-4 md:px-10 py-6 border-b border-[#8E90A2]/10 transition-all">
+        <a href="index.html" class="text-2xl md:text-3xl font-black italic tracking-tighter text-[#2E5BFF] font-['Space_Grotesk'] uppercase hover:scale-105 transition-transform">
+            KINETIC VOID
+        </a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="entrenamiento.html">ENTRENAMIENTO</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="membresias.html">MEMBRESÍAS</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="filosofia.html">FILOSOFÍA</a>
+            <a class="nav-link font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#8E90A2] hover:text-[#2E5BFF] transition-colors" href="sedes.html">SEDES</a>
+        </div>
+        <a href="membresias.html" class="bg-[#2E5BFF] text-white px-4 md:px-6 py-2 font-['Space_Grotesk'] font-bold uppercase tracking-tighter kinetic-glow active:scale-95 transition-all text-sm md:text-base">
+            ÚNETE AL VACÍO
+        </a>
+    </nav>
+
+    <!-- Membership Plans - Monolithic Grid -->
+    <section class="pt-32 pb-24 px-4 md:px-10 bg-surface min-h-screen">
+        <div class="text-center mb-20 reveal-scale">
+            <h2 class="text-5xl md:text-8xl font-black font-headline uppercase tracking-tighter mb-4 italic text-white glitch-hover inline-block">ELIGE TU NIVEL</h2>
+            <p class="font-mono text-outline tracking-widest text-xs uppercase mt-4">Asegura tu nodo en el mainframe del fitness</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Level 01 -->
+            <div class="bg-surface-container-low p-10 flex flex-col justify-between min-h-[500px] hover:-translate-y-4 transition-all duration-300 border-b-4 border-outline/20 reveal">
+                <div>
+                    <div class="text-outline font-mono text-xs tracking-[0.4em] mb-8 uppercase">ID: NIVEL_01</div>
+                    <h3 class="text-4xl font-black font-headline uppercase mb-6 text-white">BÁSICO</h3>
+                    <ul class="space-y-4 font-mono text-[10px] text-outline uppercase tracking-widest">
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Acceso 06:00 - 22:00</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Equipamiento Base</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> App Kinetic Tracking</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-5xl font-black font-headline mb-6 text-white">$49<span class="text-lg text-outline">/MES</span></div>
+                    <button class="w-full border border-outline/30 text-white py-4 font-headline font-bold uppercase hover:bg-white/5 transition-all tracking-tighter">SINCRONIZAR</button>
+                </div>
+            </div>
+
+            <!-- Level XP -->
+            <div class="bg-surface-container p-10 flex flex-col justify-between min-h-[500px] hover:-translate-y-4 transition-all duration-300 border-b-4 border-primary-container relative reveal delay-100">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-container text-white px-4 py-1 font-mono text-[10px] font-bold tracking-widest uppercase">RECOMENDADO</div>
+                <div>
+                    <div class="text-primary-container font-mono text-xs tracking-[0.4em] mb-8 uppercase">ID: NIVEL_XP</div>
+                    <h3 class="text-4xl font-black font-headline uppercase mb-6 text-white">AVANZADO</h3>
+                    <ul class="space-y-4 font-mono text-[10px] text-on-surface uppercase tracking-widest text-[#E2E2E2]">
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Acceso Total 24/7</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Todos los Sistemas</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Sauna & Recuperación</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Bio-Escaneo Mensual</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-5xl font-black font-headline mb-6 text-white">$89<span class="text-lg text-outline">/MES</span></div>
+                    <button class="w-full bg-primary-container text-white py-4 font-headline font-bold uppercase kinetic-glow tracking-tighter">CONECTAR AHORA</button>
+                </div>
+            </div>
+
+            <!-- VOID GOD -->
+            <div class="bg-surface-container-high p-10 flex flex-col justify-between min-h-[500px] hover:-translate-y-4 transition-all duration-300 border-b-4 border-tertiary-container reveal delay-200">
+                <div>
+                    <div class="text-tertiary-container font-mono text-xs tracking-[0.4em] mb-8 uppercase">ID: VOID_GOD</div>
+                    <h3 class="text-4xl font-black font-headline uppercase mb-6 text-white">ELITE</h3>
+                    <ul class="space-y-4 font-mono text-[10px] text-outline uppercase tracking-widest">
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-container text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span> Todo lo anterior</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-container text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span> Arquitecto Personal</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-container text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span> Suplementos Premium</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-container text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span> Acceso VIP Eventos</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-5xl font-black font-headline mb-6 text-white">$159<span class="text-lg text-outline">/MES</span></div>
+                    <button class="w-full bg-tertiary-container text-white py-4 font-headline font-bold uppercase kinetic-glow-red tracking-tighter">ASCENDER</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0E0E0E] flex flex-col md:flex-row justify-between items-center px-10 py-12 w-full border-t border-[#8E90A2]/15">
+        <div class="mb-8 md:mb-0 reveal-left">
+            <div class="text-lg font-bold text-[#2E5BFF] font-headline uppercase tracking-tighter mb-2">KINETIC VOID</div>
+            <p class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2]">© 2024 KINETIC VOID // SYSTEM_ACTIVE</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 reveal-right">
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">INSTAGRAM</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">SPOTIFY</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">TIKTOK</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">LEGAL</a>
+            <a class="font-mono text-[10px] tracking-widest uppercase text-[#8E90A2] hover:text-[#DB0034] transition-all hover:tracking-[0.2em] duration-300" href="#">PRIVACIDAD</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

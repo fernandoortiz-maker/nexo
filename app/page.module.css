@@ -1,0 +1,77 @@
+.main {
+  padding-bottom: 100px;
+}
+
+/* Categories Section - "Bento" Style Grid */
+.categoriesSection {
+  max-width: 1400px;
+  /* Wider for editorial feel */
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-weight: 300;
+  /* More elegant, less heavy */
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--foreground);
+}
+
+.sectionSubtitle {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 3rem;
+  text-align: left;
+  max-width: 600px;
+  font-weight: 400;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  grid-auto-rows: 280px;
+  /* Square/Card aspect ratio */
+}
+
+/* No special spans for a uniform catalog look */
+
+/* Featured Section - Clean Marketplace Vibe */
+.featuredSection {
+  background: transparent;
+  padding: 100px 24px;
+  position: relative;
+}
+
+.featuredSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
+}
+
+.featuredContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.featuredHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 3rem;
+}
+
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+}

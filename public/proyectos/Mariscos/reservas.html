@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Reservar Mesa - El Faro del Puerto</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="bg-surface flex flex-col min-h-screen">
+
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+    <nav class="flex justify-between items-center px-6 lg:px-8 py-4 max-w-7xl mx-auto">
+        <a href="index.html" class="font-serif italic text-2xl text-blue-900 dark:text-blue-100">El Faro del Puerto</a>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="index.html">Inicio</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="menu.html">Menú</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="galeria.html">Galería</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="historia.html">Historia</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="ubicacion.html">Ubicación</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="reservas.html" class="hidden md:block bg-gradient-to-r from-primary to-primary-container text-white px-6 py-2 rounded-md font-sans uppercase text-sm font-semibold shadow-inner">Reservar</a>
+            <button id="menu-btn" class="md:hidden text-primary"><span class="material-symbols-outlined text-3xl">menu</span></button>
+        </div>
+    </nav>
+</header>
+<div id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center gap-8 border-t pt-20">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-primary"><span class="material-symbols-outlined text-3xl">close</span></button>
+    <a class="text-lg uppercase text-slate-600" href="index.html">Inicio</a>
+    <a class="text-lg uppercase text-slate-600" href="menu.html">Menú</a>
+    <a class="text-lg uppercase text-slate-600" href="galeria.html">Galería</a>
+    <a class="text-lg uppercase text-slate-600" href="historia.html">Historia</a>
+    <a class="text-lg uppercase text-slate-600" href="ubicacion.html">Ubicación</a>
+</div>
+
+<main class="flex-grow pt-32 pb-24 flex items-center justify-center">
+<section class="max-w-3xl w-full mx-auto px-8">
+    <div class="bg-white rounded-xl shadow-lg p-10 md:p-14">
+        <h2 class="text-4xl font-headline text-primary mb-6 text-center">Reserva tu mesa</h2>
+        <p class="text-on-surface-variant text-center mb-10">Te esperamos para disfrutar del mejor sabor del puerto.</p>
+        
+        <form class="space-y-6" onsubmit="event.preventDefault(); alert('¡Mesa reservada con éxito!'); window.location.href='index.html';">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-bold text-primary mb-2" for="nombre">Nombre Completo</label>
+                    <input class="w-full border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" type="text" id="nombre" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-primary mb-2" for="telefono">Teléfono</label>
+                    <input class="w-full border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" type="tel" id="telefono" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-primary mb-2" for="fecha">Fecha</label>
+                    <input class="w-full border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" type="date" id="fecha" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-primary mb-2" for="hora">Hora</label>
+                    <input class="w-full border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" type="time" id="hora" required>
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-sm font-bold text-primary mb-2" for="personas">Número de Personas</label>
+                    <select class="w-full border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" id="personas" required>
+                        <option value="1">1 Persona</option>
+                        <option value="2" selected>2 Personas</option>
+                        <option value="3">3 Personas</option>
+                        <option value="4">4 Personas</option>
+                        <option value="5">5+ Personas</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mt-8">
+                <button type="submit" class="w-full py-4 bg-primary text-white rounded-md font-bold uppercase tracking-widest hover:bg-primary-container transition-colors shadow-lg">Confirmar Reserva</button>
+            </div>
+        </form>
+    </div>
+</section>
+</main>
+
+<footer class="w-full mt-auto border-t border-slate-200 bg-slate-50">
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-7xl mx-auto">
+        <div class="font-serif text-lg text-primary">El Faro del Puerto</div>
+        <div class="text-slate-500 font-sans text-sm tracking-tight">© 2024 El Faro del Puerto. Todos los derechos reservados.</div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

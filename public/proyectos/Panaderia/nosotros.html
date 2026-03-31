@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="light" lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Nosotros - The Artisanal Table</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="selection:bg-primary-fixed selection:text-on-primary-fixed flex flex-col min-h-screen">
+<nav class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-[#1b1d0e]/80 backdrop-blur-md shadow-[0_4px_30px_rgba(130,59,24,0.05)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+    <a href="index.html" class="text-2xl font-serif font-bold text-[#823b18] dark:text-[#a0522d] tracking-tighter">The Artisanal Table</a>
+    <div class="hidden md:flex gap-10">
+        <a class="text-[#54433c] dark:text-[#e4e4cc] hover:text-[#823b18] transition-colors font-serif tracking-tight" href="index.html">Inicio</a>
+        <a class="text-[#823b18] dark:text-[#a0522d] font-bold border-b-2 border-[#823b18] pb-1 font-serif tracking-tight" href="nosotros.html">Nosotros</a>
+        <a class="text-[#54433c] dark:text-[#e4e4cc] hover:text-[#823b18] transition-colors font-serif tracking-tight" href="menu.html">Menú</a>
+        <a class="text-[#54433c] dark:text-[#e4e4cc] hover:text-[#823b18] transition-colors font-serif tracking-tight" href="contacto.html">Contacto</a>
+    </div>
+    <div class="flex items-center gap-4">
+        <a href="contacto.html" class="hidden md:block bg-primary hover:bg-primary-container text-on-primary px-6 py-2 rounded-md font-body font-semibold transition-all duration-300 active:scale-95 shadow-sm">Haz tu Pedido</a>
+        <button id="menu-btn" class="md:hidden text-primary"><span class="material-symbols-outlined text-3xl">menu</span></button>
+    </div>
+</div>
+</nav>
+
+<div id="mobile-menu" class="fixed inset-0 bg-[#fbfbe2] z-40 hidden flex-col items-center justify-center gap-8 border-t pt-20">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-primary"><span class="material-symbols-outlined text-3xl">close</span></button>
+    <a class="text-xl uppercase text-[#54433c]" href="index.html">Inicio</a>
+    <a class="text-xl uppercase font-bold text-primary" href="nosotros.html">Nosotros</a>
+    <a class="text-xl uppercase text-[#54433c]" href="menu.html">Menú</a>
+    <a class="text-xl uppercase text-[#54433c]" href="contacto.html">Contacto</a>
+    <a class="text-lg uppercase text-white bg-primary px-8 py-3 rounded-md mt-4" href="contacto.html">Haz tu Pedido</a>
+</div>
+
+<main class="flex-grow pt-28">
+<section class="py-24 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-24 items-center">
+        <div class="order-2 md:order-1 relative">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-4">
+                    <div class="aspect-square rounded-lg overflow-hidden translate-y-8">
+                        <img class="w-full h-full object-cover" alt="Manos de panadero amasando pan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvwDIYnDrKG1jYZcY5o0tTdcbKJjkiqRDlg31HQpltRycP7w7nMC0YRbR7KlHoAQ_GUz-PIXKi1vRImsP7ka7TDzd0jEFvtyvAAfkd4AFKVMM_ATEetAslCHhTXGl1s4OaxiV2_pZjBZ7fkTkFaNGosPW4X9lW7WI88L-ohdktLsrQ8rXQkDh7X0i6rSo4wkU_nXrmhNFx7sVnO8wdAwcB8tv8dai5AbvY77y1bCRzo_WES9yYMQQgr1Kpr_-XLRp5ZBv0alqhMzhM"/>
+                    </div>
+                    <div class="aspect-[3/4] rounded-lg overflow-hidden">
+                        <img class="w-full h-full object-cover" alt="Ingredientes orgánicos incluyendo leche" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdMKPKSF7bDHTG3hDr0ObFE6DRIhIhG0MVnHipdYQ8jvSL118dNMRmrAQSlbEWzutakzZ9bM7EA3D6NCQMKUXt2Iub_RlOphU8jvZtiRYsBb9ffg9kbXDTmf90qwhQOXYtp7c6yBZvp9YoMDE3uZBHR2IUCUlglT1p2K0fNRo43nSfTbkhK9G73fGbjCX8VRucOoF1JmYtLHM2ctyZKsUG2ZOYUbIA9cLjxhqnOlOu6hJj2hU9bBewwzB9TsVXmfRbGb9LUIDsUBm6"/>
+                    </div>
+                </div>
+                <div class="aspect-[3/5] rounded-lg overflow-hidden mt-12">
+                    <img class="w-full h-full object-cover" alt="Interior del horno de piedra artesanal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDpXuHPuk0xv6B5BfgzfFUcQbZZwSVYiuV7CUNJMQ0k06CzUXgUNXPk67w-K7SJLUZrVOP0TwHKPnXNE2nlF80jOnePPZznD5QFw1OU2LuYBzesmSwv_6bbKHpybTUk8xTvNo7yie5Y0F029ffk2Q1j3duUrab4DxOylnzsovIXX_cbafEuufxwKBV_zBJWIL2XPoEr9gcvcgG0kxAtDIkYNCwyx7aAWH5ndsCP0krvXbGrlwFDaQbyrpP3Uim4tpd8UJJ32jBoNVf"/>
+                </div>
+            </div>
+        </div>
+        <div class="order-1 md:order-2">
+            <span class="block text-primary font-label font-bold tracking-widest uppercase text-sm mb-6">Nuestra Historia</span>
+            <h2 class="text-5xl font-headline font-bold text-on-surface leading-tight mb-8">Fermentación Lenta, Ingredientes Reales</h2>
+            <div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+                <p>Creemos que el sabor auténtico no tiene prisas. Nuestra masa madre ha sido alimentada diario por tres décadas, produciendo una acidez compleja y una miga aireada que la levadura comercial simplemente no puede replicar.</p>
+                <p>Cada grano proviene de granjas familiares locales en un radio de 80 kilómetros, molido al momento para preservar los nutrientes delicados y los aceites naturales que definen el pan artesanal.</p>
+            </div>
+            <div class="mt-12 flex items-center gap-4">
+                <div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-3xl">eco</span>
+                </div>
+                <p class="font-body font-bold text-on-surface">Granos 100% de Origen Sustentable</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-surface-variant/30">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-20">
+            <span class="block text-primary font-label font-bold tracking-widest uppercase text-sm mb-6">Nuestra Comunidad</span>
+            <h2 class="text-5xl font-headline font-bold text-on-surface">Voces de Nuestro Fogón</h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-surface p-10 rounded-xl editorial-shadow border border-outline-variant/10">
+                <div class="flex gap-1 text-primary mb-6">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="text-xl italic font-serif text-on-surface mb-8">"La masa madre aquí no es solo pan, es una experiencia religiosa. La corteza tiene una profundidad de sabor que no he encontrado en ningún otro lugar de la ciudad."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high">
+                        <img class="w-full h-full object-cover" alt="Persona" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGErROc6q_UNforsnrYWpLIYdjiO5JUa2cDdTM8RRm8QrnQVYPkKAvo1zo1ZzVaXl1ixZDeiTphqlvG3EduX43Yth5Yi8swceAB4cZ_smLDZhUMNyCDP9ND1fnagYE7hejuS44AMyO-vKZ-VGuSUAWYY3_Lt0KbjD8oy_qwE-lEbNgCc3RbWHYyUZjSQvv38DIoDB3uH81FbvIhpILU3OoYv8PP1FPQHtA0hLWYAF-nrIZ7mZnwqUz5M9yifPUiFKzGXs8AUhMt2i9"/>
+                    </div>
+                    <div>
+                        <h4 class="font-bold font-body text-on-surface">Elena Roberts</h4>
+                        <p class="text-sm text-on-surface-variant font-label">Crítica Gastronómica Local</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-surface p-10 rounded-xl editorial-shadow border border-outline-variant/10 md:translate-y-12">
+                <div class="flex gap-1 text-primary mb-6">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="text-xl italic font-serif text-on-surface mb-8">"Vengo cada sábado por la mañana por los croissants. Se nota la calidad de la mantequilla y el cuidado en el laminado. Simplemente soberbio."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high">
+                        <img class="w-full h-full object-cover" alt="Comprador frecuente" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6sjB4qrj3Tf8w_c6d38w_uBZg4Yhr0cxXE7wztSpYZrUBHN1FzieDd3oXKxrT7hpUQ556_A0aEoH_LmsVV4E3gg9fmOZ-f2Z20zQQk0oSnJgyrhNM5K4W3AjM3PB9hBwQt4Jcmh8JOXhoUbIiZP8JQjJurDsoVFHU0xooySbFc44I4O8cYC7zht9ablY1y5DESwApexzdqMiNtyw8xe-mfMaO6OHHcmkDvDFqhr0yR78W_AzCCRwoXORio8VoS9cJE4nrolpsSQTV"/>
+                    </div>
+                    <div>
+                        <h4 class="font-bold font-body text-on-surface">Jameson Thorne</h4>
+                        <p class="text-sm text-on-surface-variant font-label">Vecino de la panadería</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-surface p-10 rounded-xl editorial-shadow border border-outline-variant/10">
+                <div class="flex gap-1 text-primary mb-6">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="text-xl italic font-serif text-on-surface mb-8">"Saber que su grano proviene de granjas locales hace que cada hogaza se sienta como una contribución a nuestra comunidad. Y sabe increíble."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high">
+                        <img class="w-full h-full object-cover" alt="Amo el pan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtE4prMA9921F5BlUHH7Y-LFRniQPQaRDIhYai5ncEq67NkVOsPkU-PLh_BzZbm_eC82GOv_o8nKGTOvmC1oMiHg--pj2HT6WuqRazAuAO4cTcd6dPVG18W1Gy2_iKCWoh08ArMzMlQXR6tGOdOe2s_Qpw5Nx2ABTPDz2CuQAI8iDW-wk5fcECCCLbMmAF_JtQ66PRRkNsAFq0IfX5QX-1p3EM9nT_2Rt4WiPiqAethDTBCmh1argDSbr_fpA52wR7mByg4X8LhRDa"/>
+                    </div>
+                    <div>
+                        <h4 class="font-bold font-body text-on-surface">Sarah Mitchell</h4>
+                        <p class="text-sm text-on-surface-variant font-label">Sustentabilidad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="bg-[#f5f5dc] dark:bg-[#2a2a1a] w-full py-12 mt-auto border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8">
+<div class="space-y-6">
+<span class="text-xl font-serif text-[#1b1d0e] dark:text-[#fbfbe2] font-bold">The Artisanal Table</span>
+<p class="font-sans text-[#54433c] dark:text-[#e4e4cc] leading-relaxed">Dedicados al oficio de la panadería tradicional y al sustento de nuestra comunidad local.</p>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-surface font-headline uppercase tracking-widest text-sm">Visítanos</h4>
+<div class="space-y-4 font-body text-on-surface-variant">
+<p class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">location_on</span> 124 Hearthstone Ave, Flour District</p>
+<p class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">schedule</span> Mié - Dom: 7:00 AM - 3:00 PM</p>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-surface font-headline uppercase tracking-widest text-sm">Enlaces Rápidos</h4>
+<ul class="space-y-3 font-body">
+<li><a class="text-[#54433c] hover:text-[#823b18] transition-colors" href="nosotros.html">Nosotros</a></li>
+<li><a class="text-[#54433c] hover:text-[#823b18] transition-colors" href="menu.html">El Menú</a></li>
+<li><a class="text-[#54433c] hover:text-[#823b18] transition-colors" href="contacto.html">Haz tu pedido</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/20 flex flex-col sm:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-sm font-body">© 2024 La Mesa Artesanal. Horneado con el corazón.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

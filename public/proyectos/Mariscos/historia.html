@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Historia - El Faro del Puerto</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="bg-surface flex flex-col min-h-screen">
+
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+    <nav class="flex justify-between items-center px-6 lg:px-8 py-4 max-w-7xl mx-auto">
+        <a href="index.html" class="font-serif italic text-2xl text-blue-900 dark:text-blue-100">El Faro del Puerto</a>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="index.html">Inicio</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="menu.html">Menú</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="galeria.html">Galería</a>
+            <a class="text-blue-900 dark:text-blue-300 font-bold border-b-2 border-teal-400 pb-1 font-sans uppercase tracking-wider text-sm" href="historia.html">Historia</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 transition-colors font-sans uppercase tracking-wider text-sm" href="ubicacion.html">Ubicación</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="reservas.html" class="hidden md:block bg-gradient-to-r from-primary to-primary-container text-white px-6 py-2 rounded-md font-sans uppercase text-sm font-semibold hover:shadow-lg transition-all">Reservar</a>
+            <button id="menu-btn" class="md:hidden text-primary"><span class="material-symbols-outlined text-3xl">menu</span></button>
+        </div>
+    </nav>
+</header>
+<div id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center gap-8 border-t pt-20">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-primary"><span class="material-symbols-outlined text-3xl">close</span></button>
+    <a class="text-lg uppercase text-slate-600" href="index.html">Inicio</a>
+    <a class="text-lg uppercase text-slate-600" href="menu.html">Menú</a>
+    <a class="text-lg uppercase text-slate-600" href="galeria.html">Galería</a>
+    <a class="text-lg uppercase text-primary font-bold" href="historia.html">Historia</a>
+    <a class="text-lg uppercase text-slate-600" href="ubicacion.html">Ubicación</a>
+</div>
+
+<main class="flex-grow pt-32 pb-24">
+<section class="py-12 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary/5 rounded-full blur-3xl"></div>
+                <img class="rounded-xl shadow-2xl relative z-10 w-full aspect-[4/5] object-cover" alt="Interior acogedor de nuestro restaurante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfj1rp5liR_HaYcWUVAe1Jj_VAVk-erSErkjah-gobt9PiZY10kO_IJYUeHlPuDmbAe-2egXU5UoQPOg739Ul3tGZuWFX6C_9Ov-K1_i-xEm8YMoTVhip3z8_Krw8QxbcgVx4DAhwUMWCqNftlxMbdYFkZbLqK9pP7M5BqwpRpZsF0c0sVN4rG7mdjcC74hOOr1SXqGP-vs0W7J0DFH6x9qSLRAysywvSAJNwM3unuizOfjIKunk1FwLSGmpuBlFiXtApgxmEc1Tv0"/>
+                <div class="absolute -bottom-6 -right-6 bg-primary text-white p-8 rounded-md shadow-xl z-20 hidden lg:block">
+                    <p class="font-headline italic text-2xl">"El sabor del puerto en cada bocado."</p>
+                </div>
+            </div>
+            <div class="space-y-8">
+                <span class="text-secondary font-semibold tracking-widest uppercase text-sm">Nuestro Legado</span>
+                <h2 class="text-5xl font-headline text-primary leading-tight">Ambiente Familiar y Tradición Viva</h2>
+                <p class="text-lg text-on-surface-variant font-body leading-relaxed">
+                    En El Faro del Puerto, no solo servimos comida; compartimos una herencia. Nuestra decoración náutica y los toques de madera clara evocan la serenidad de los barcos que llegan cada mañana.
+                </p>
+                <p class="text-lg text-on-surface-variant font-body leading-relaxed">
+                    Trabajamos de la mano con pescadores locales para asegurar que cada ingrediente mantenga ese aroma a salitre y frescura que solo el mar abierto puede ofrecer. Un espacio diseñado para que su familia se sienta en casa, frente al mar.
+                </p>
+                <div class="pt-4 flex gap-8">
+                    <div>
+                        <p class="text-3xl font-headline text-tertiary">100%</p>
+                        <p class="text-sm font-label uppercase text-on-surface-variant">Fresco</p>
+                    </div>
+                    <div class="w-[1px] bg-outline-variant/30"></div>
+                    <div>
+                        <p class="text-3xl font-headline text-tertiary">45+</p>
+                        <p class="text-sm font-label uppercase text-on-surface-variant">Años</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="w-full mt-auto border-t border-slate-200 bg-slate-50">
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-7xl mx-auto">
+        <div class="font-serif text-lg text-primary">El Faro del Puerto</div>
+        <div class="text-slate-500 font-sans text-sm tracking-tight">© 2024 El Faro del Puerto. Todos los derechos reservados.</div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

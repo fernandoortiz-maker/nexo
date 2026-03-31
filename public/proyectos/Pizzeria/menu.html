@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="dark" lang="es-419">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Menú | Lumina</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="styles.css" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-dark": "#120d0b",
+                        "charcoal": "#181311",
+                        "cream": "#fdfaf1"
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-dark text-cream page-enter">
+
+    <!-- Sticky Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <span class="material-symbols-outlined text-primary text-3xl">restaurant_menu</span>
+                <h2 class="serif-heading text-2xl font-bold tracking-tight text-white">Lumina</h2>
+            </a>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="experiencia.html">La Experiencia</a>
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="historia.html">Nuestra Historia</a>
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-primary transition-colors" href="menu.html">Menú</a>
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="galeria.html">Galería</a>
+            </nav>
+            <button class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm tracking-wide uppercase hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30">
+                Reservaciones
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="relative h-[45vh] w-full flex items-end justify-center pb-12 overflow-hidden fade-in-up">
+        <div class="absolute inset-0 z-0 bg-background-dark">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_#120d0b_100%)] opacity-80 mix-blend-multiply pointer-events-none"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 fade-in-up delay-200">
+            <span class="text-primary font-bold uppercase tracking-[0.3em] text-sm mb-4 block">Materia y Arte</span>
+            <h1 class="serif-heading text-5xl md:text-6xl text-white font-black leading-tight mb-2">
+                Menú Degustación
+            </h1>
+            <p class="text-white/40 tracking-widest text-xs uppercase mt-2">Invierno 2024</p>
+        </div>
+    </section>
+
+    <!-- Menu List Section -->
+    <section class="py-16 px-6 lg:px-20 bg-background-dark">
+        <div class="max-w-4xl mx-auto flex flex-col gap-12 fade-in-up delay-100">
+            <!-- Entrees -->
+            <div>
+                <h3 class="serif-heading text-3xl text-white border-b border-white/10 pb-4 mb-8">Comienzos</h3>
+                <div class="space-y-8">
+                    <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2 hover:border-primary/50 transition-colors">
+                        <div class="pr-8">
+                            <h4 class="text-xl font-bold text-white mb-1">Azafrán del Océano</h4>
+                            <p class="text-white/60 text-sm">Vieiras de Hokkaido selladas, emulsión tibia de azafrán español, hinojo marino encurtido crujiente.</p>
+                        </div>
+                        <span class="text-primary font-bold text-lg whitespace-nowrap">$42</span>
+                    </div>
+                    <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2 hover:border-primary/50 transition-colors">
+                        <div class="pr-8">
+                            <h4 class="text-xl font-bold text-white mb-1">Jardín de Humo</h4>
+                            <p class="text-white/60 text-sm">Espárragos orgánicos a la parrilla de carbón binchotan, yema de huevo curada y espuma de parmesano añejo.</p>
+                        </div>
+                        <span class="text-primary font-bold text-lg whitespace-nowrap">$28</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Principales -->
+            <div class="mt-8">
+                <h3 class="serif-heading text-3xl text-white border-b border-white/10 pb-4 mb-8">El Apogeo</h3>
+                <div class="space-y-8">
+                    <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2 hover:border-primary/50 transition-colors">
+                        <div class="pr-8">
+                            <h4 class="text-xl font-bold text-white mb-1">Wagyu de Medianoche</h4>
+                            <p class="text-white/60 text-sm">Corte de Wagyu A5 de Kioto, ceniza de carbón de bambú, emulsión de trufa negra de Perigord, jus de médula ósea quemada.</p>
+                        </div>
+                        <span class="text-primary font-bold text-lg whitespace-nowrap">$120</span>
+                    </div>
+                    <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2 hover:border-primary/50 transition-colors">
+                        <div class="pr-8">
+                            <h4 class="text-xl font-bold text-white mb-1">Rey del Norte</h4>
+                            <p class="text-white/60 text-sm">Bacalao negro salvaje de Alaska glaseado en miso de 3 años, risotto de quinoa inflada crujiente, aceite de eneldo silvestre.</p>
+                        </div>
+                        <span class="text-primary font-bold text-lg whitespace-nowrap">$65</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postres -->
+            <div class="mt-8 mb-12">
+                <h3 class="serif-heading text-3xl text-white border-b border-white/10 pb-4 mb-8">Dulce Final</h3>
+                <div class="space-y-8">
+                    <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2 hover:border-primary/50 transition-colors">
+                        <div class="pr-8">
+                            <h4 class="text-xl font-bold text-white mb-1">Llamarada Solar</h4>
+                            <p class="text-white/60 text-sm">Esfera rompible de chocolate negro del 85%, líquido vibrante de naranja sanguina siciliana, polvo de oro comestible de 24 quilates.</p>
+                        </div>
+                        <span class="text-primary font-bold text-lg whitespace-nowrap">$28</span>
+                    </div>
+                    <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2 hover:border-primary/50 transition-colors">
+                        <div class="pr-8">
+                            <h4 class="text-xl font-bold text-white mb-1">Perla Helada</h4>
+                            <p class="text-white/60 text-sm">Sorbete de lichi blanco inmaculado fundido, crujiente fino de yuzu, gel suave de té macha ceremonial.</p>
+                        </div>
+                        <span class="text-primary font-bold text-lg whitespace-nowrap">$24</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-12 mb-16">
+                <button class="border border-white/30 text-white backdrop-blur-sm px-10 py-5 rounded-lg font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-charcoal transition-colors">
+                    Descargar en PDF
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal pt-16 pb-12 px-6 lg:px-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center text-center fade-in-up">
+            <h2 class="serif-heading text-xl font-bold tracking-tight text-white mb-4">Lumina || Arte en un Plato</h2>
+            <p class="text-white/30 text-xs tracking-widest uppercase">© 2024 Lumina Dining. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>

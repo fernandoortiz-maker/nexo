@@ -1,0 +1,251 @@
+�<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="description"
+        content="IceCreamy - Las mejores paletas artesanales hechas con fruta 100% natural. Eventos, mayoreo y más.">
+    <meta name="keywords" content="paletas, helados, artesanal, natural, eventos, mayoreo">
+    <meta name="author" content="IceCreamy">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IceCreamy | La Mejor Paletería</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Outfit:wght@300;400;700&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Barra decorativa superior -->
+    <div class="header-top-bar"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container flex-between">
+            <a href="index.html" class="logo flex-center"
+                style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; color: var(--color-primary); gap: 0.5rem;">
+                <span style="color: var(--color-secondary);">Ice</span>Creamy
+                <span style="font-size: 2rem;">🍦</span>
+            </a>
+
+            <nav class="desktop-nav" style="display: flex; align-items: center; gap: 0.5rem;">
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                <a href="productos.html" class="nav-link">Sabores</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="servicios.html#contacto" class="btn btn-primary"
+                    style="padding: 8px 20px; font-size: 1rem;">Pedido</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn"
+                style="display: none; font-size: 1.8rem; color: var(--color-primary); background: none; border: none; cursor: pointer;">☰</button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-nav" class="mobile-nav"
+            style="display: none; flex-direction: column; padding: 1rem; background: white; box-shadow: var(--shadow-md);">
+            <a href="index.html" class="nav-link" style="padding: 0.5rem 0;">Inicio</a>
+            <a href="nosotros.html" class="nav-link" style="padding: 0.5rem 0;">Nosotros</a>
+            <a href="productos.html" class="nav-link" style="padding: 0.5rem 0;">Sabores</a>
+            <a href="servicios.html" class="nav-link" style="padding: 0.5rem 0;">Servicios</a>
+            <a href="servicios.html#contacto" class="btn btn-primary"
+                style="padding: 8px 20px; font-size: 1rem; margin-top: 0.5rem;">Pedido</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section flex-center"
+            style="min-height: 80vh; background: linear-gradient(135deg, var(--color-bg) 0%, #ffeaf1 100%); text-align: center;">
+            <div class="container animate-fade-in">
+                <span
+                    style="font-family: var(--font-heading); background: var(--color-accent); padding: 5px 15px; border-radius: 20px; font-weight: bold; margin-bottom: 1rem; display: inline-block;">¡Nueva
+                    temporada de Mango! 🥭</span>
+                <h1 style="margin-top: 1rem;">La Felicidad en forma<br><span style="color: var(--color-primary);">de
+                        Paleta</span></h1>
+                <p
+                    style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Hechas artesanalmente con frutas 100% naturales, sin conservadores y con el toque secreto de la
+                    abuela.
+                </p>
+                <div class="flex-center" style="gap: 1rem;">
+                    <a href="productos.html" class="btn btn-primary">Ver Sabores</a>
+                    <a href="nosotros.html" class="btn btn-outline">Nuestra Historia</a>
+                </div>
+
+                <!-- Floating Elements (Decorative) -->
+                <div class="animate-float"
+                    style="font-size: 4rem; position: absolute; top: 20%; left: 10%; opacity: 0.5;">🍓</div>
+                <div class="animate-float delay-100"
+                    style="font-size: 3rem; position: absolute; bottom: 20%; right: 10%; opacity: 0.5;">🥥</div>
+                <div class="animate-float delay-200"
+                    style="font-size: 5rem; position: absolute; top: 30%; right: 20%; opacity: 0.3;">🍋</div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="section" style="background-color: var(--color-white);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2>Favoritos del Mes</h2>
+                    <p>Los sabores que todos aman</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-img flex-center" style="background: #FFCDD2; font-size: 4rem;">🍓</div>
+                        <div class="card-body">
+                            <span class="card-badge">Bestseller</span>
+                            <h3 class="card-title">Fresa con Crema</h3>
+                            <p>Trozos reales de fresa en nuestra crema especial.</p>
+                            <div class="flex-between" style="margin-top: 1rem;">
+                                <span class="card-price">$25</span>
+                                <button class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-img flex-center" style="background: #B2DFDB; font-size: 4rem;">🍋</div>
+                        <div class="card-body">
+                            <span class="card-badge" style="background: #80DEEA;">Refrescante</span>
+                            <h3 class="card-title">Limón con Chía</h3>
+                            <p>La combinación perfecta entre acidez y frescura.</p>
+                            <div class="flex-between" style="margin-top: 1rem;">
+                                <span class="card-price">$20</span>
+                                <button class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-img flex-center" style="background: #FFE082; font-size: 4rem;">🥭</div>
+                        <div class="card-body">
+                            <span class="card-badge" style="background: #FFD54F;">De temporada</span>
+                            <h3 class="card-title">Mango Chamoy</h3>
+                            <p>Dulce mango manila con nuestro chamoy casero.</p>
+                            <div class="flex-between" style="margin-top: 1rem;">
+                                <span class="card-price">$22</span>
+                                <button class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">Ver
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section"
+            style="background-color: var(--color-secondary-light); text-align: center; color: var(--color-text-main);">
+            <div class="container">
+                <h2>¿Tienes un evento?</h2>
+                <p style="margin-bottom: 2rem;">Llevamos el carrito de paletas a tu fiesta.</p>
+                <a href="servicios.html" class="btn btn-primary">Cotizar Evento</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="grid grid-3" style="gap: 3rem;">
+                <div>
+                    <h3 style="color: white; margin-bottom: 1rem;">IceCreamy 🍦</h3>
+                    <p style="margin-bottom: 1rem;">Las mejores paletas artesanales hechas con fruta 100% natural y
+                        mucho amor desde 2010.</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">"Endulzando vidas, una paleta a la vez"</p>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Enlaces Rápidos</h4>
+                    <ul style="line-height: 2.2;">
+                        <li><a href="index.html" style="transition: var(--transition); display: inline-block;">🏠 Inicio</a></li>
+                        <li><a href="nosotros.html" style="transition: var(--transition); display: inline-block;">👥 Nuestra Historia</a></li>
+                        <li><a href="productos.html" style="transition: var(--transition); display: inline-block;">🍓 Menú de Sabores</a></li>
+                        <li><a href="servicios.html" style="transition: var(--transition); display: inline-block;">🎉 Servicios</a></li>
+                        <li><a href="servicios.html#contacto" style="transition: var(--transition); display: inline-block;">📧 Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Contáctanos</h4>
+                    <p style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                        <span style="font-size: 1.2rem;">📍</span>
+                        <span>Av. Revolución 456, Col. Centro<br>Ciudad de México, CP 06000</span>
+                    </p>
+                    <p style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="font-size: 1.2rem;">📞</span>
+                        <a href="tel:+525512345678" style="transition: var(--transition);">+52 (55) 1234-5678</a>
+                    </p>
+                    <p style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="font-size: 1.2rem;">✉️</span>
+                        <a href="mailto:hola@icecreamy.mx" style="transition: var(--transition);">hola@icecreamy.mx</a>
+                    </p>
+                    <p style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="font-size: 1.2rem;">🕒</span>
+                        <span>Lun-Dom: 10:00 AM - 9:00 PM</span>
+                    </p>
+
+                    <div style="margin-top: 1.5rem;">
+                        <p style="font-weight: 600; margin-bottom: 0.5rem;">Síguenos:</p>
+                        <div style="display: flex; gap: 1rem; font-size: 1.8rem;">
+                            <a href="https://facebook.com/icecreamy" target="_blank" rel="noopener"
+                                style="transition: var(--transition); transform: scale(1); display: inline-block;"
+                                onmouseover="this.style.transform='scale(1.2) rotate(5deg)'"
+                                onmouseout="this.style.transform='scale(1)'" title="Facebook">📘</a>
+                            <a href="https://instagram.com/icecreamy" target="_blank" rel="noopener"
+                                style="transition: var(--transition); transform: scale(1); display: inline-block;"
+                                onmouseover="this.style.transform='scale(1.2) rotate(5deg)'"
+                                onmouseout="this.style.transform='scale(1)'" title="Instagram">📷</a>
+                            <a href="https://tiktok.com/@icecreamy" target="_blank" rel="noopener"
+                                style="transition: var(--transition); transform: scale(1); display: inline-block;"
+                                onmouseover="this.style.transform='scale(1.2) rotate(5deg)'"
+                                onmouseout="this.style.transform='scale(1)'" title="TikTok">🎵</a>
+                            <a href="https://wa.me/525512345678" target="_blank" rel="noopener"
+                                style="transition: var(--transition); transform: scale(1); display: inline-block;"
+                                onmouseover="this.style.transform='scale(1.2) rotate(5deg)'"
+                                onmouseout="this.style.transform='scale(1)'" title="WhatsApp">💬</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid rgba(255,255,255,0.2);">
+                <p style="margin-bottom: 0.5rem;">&copy; 2024 Paletería IceCreamy. Todos los derechos reservados.</p>
+                <p style="font-size: 0.85rem; opacity: 0.7;">Hecho con ❤️ y mucha fruta natural</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/security.js"></script>
+
+
+
+
+    <!-- Botón Flotante Volver al Portafolio -->
+    <a href="../../" 
+       style="position: fixed; bottom: 30px; right: 30px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: #0f172a; color: #ffffff; border-radius: 50%; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15); z-index: 99999; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid rgba(255,255,255,0.1);"
+       onmouseover="this.style.transform='scale(1.1) translateY(-5px)'; this.style.backgroundColor='#1e293b'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1)';"
+       onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.backgroundColor='#0f172a'; this.style.boxShadow='0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15)';"
+       title="Volver al Inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+    </a>
+</body>
+
+</html>

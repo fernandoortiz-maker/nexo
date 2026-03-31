@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="dark" lang="es-419">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Galería | Lumina</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="styles.css" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-dark": "#120d0b",
+                        "charcoal": "#181311",
+                        "cream": "#fdfaf1"
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-charcoal text-cream page-enter">
+
+    <!-- Sticky Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-charcoal/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <span class="material-symbols-outlined text-primary text-3xl">restaurant_menu</span>
+                <h2 class="serif-heading text-2xl font-bold tracking-tight text-white">Lumina</h2>
+            </a>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="experiencia.html">La Experiencia</a>
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="historia.html">Nuestra Historia</a>
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-primary transition-colors" href="menu.html">Menú</a>
+                <a class="text-xs uppercase tracking-[0.2em] font-medium text-primary transition-colors" href="galeria.html">Galería</a>
+            </nav>
+            <button class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm tracking-wide uppercase hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30">
+                Reservaciones
+            </button>
+        </div>
+    </header>
+
+    <!-- Header -->
+    <section class="pt-40 pb-16 text-center fade-in-up">
+        <h1 class="serif-heading text-5xl md:text-6xl text-white font-black leading-tight mb-4">
+            Un Banquete Visual
+        </h1>
+        <p class="text-white/60 tracking-widest text-sm uppercase">Cada plato es una obra maestra pintada a mano.</p>
+    </section>
+
+    <!-- Gallery Masonry -->
+    <section class="max-w-[1400px] mx-auto px-6 lg:px-10 pb-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 auto-rows-[300px]">
+        <!-- Image 1 -->
+        <div class="rounded-xl overflow-hidden bg-background-dark row-span-2 shadow-xl group fade-in-up delay-100 relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC12H5CcwD35xaBXIbPBdkSdB6LN4qF0rs8JxqMFL-gfQAVqaUnBO5Yt1xCs-53brg8sv-9Gxoc5xsJiavLMB__wUAZWeBEj_90_I7rKFWu3aj8nAHYhFLUDvl-uV3tx8D8mD9mBSgeSgtJuy0XJeWrkyxhePbp-Nqv1eZYM_yNME3UlGHMiyVxI9KQx3Np8U8aWcI76UdJcxcLYHFVnKPYcLQHVA7BAS0cY2qAWViLsWEb8DMdrlgAg3TRlyIDRUVCqjCygO36nLs" alt="Wagyu detallado" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="rounded-xl overflow-hidden bg-background-dark shadow-xl group fade-in-up delay-200 relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ8uet_Ek00prwfoSasPzKmKCsllEU0K5TFNKyI2_FoHGVbO4TfUTND_4FNrik1upwIhfvbumSDkIpcd4pZnIyEdfGKOwao2LKVsciw8H0rB6QIaOzbM9QCBtrXsPULnp6ifSzJ-rDB79zdYNVRfT2cUsyBlr2cn0CIru_rRbH48PIQaBqug_5e_jInCEB7WMEJlnVgstJ31Qhf1bzQ4stM7avsriihGpsMfFWvPUrf-VQAfQnl-EfSF3Zt90mX5L-gdrylbjU_lY" alt="Cóctel de autor" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="rounded-xl overflow-hidden bg-background-dark shadow-xl group fade-in-up delay-300 relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrZkpufPsfyZHlFK-KYGwa349Yd7611g9Z5yRxF4buNXbXVEGKo9x55_dyyqV9YmJAQOTThvwVIVbjo4dSktURNSBFTdW3ZIiFwBXDiZuIiH7AUVvEcAeSEo_S3BDxw1wc1AC1jEiiFHBAZ74zfdbC3rY2m73VLoVR559bVlEEese6BnsP2ID7KQOs7mobtoJsk3ec719wK_ENDlemR-fnuWHzUAZ34N52T0n2z8ccymR2Zi26EIBzfDX_s817pqjlVlVbP8JknvU" alt="Vegetales ahumados" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+            </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="rounded-xl overflow-hidden bg-background-dark row-span-2 shadow-xl group fade-in-up delay-100 relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuALad_CjkEd4PlYh3eCil39dUVx6EXCSgIdT33jidu7FaKP3hbe2BJn48sPsMEaQ83O6URAAl4QtQiiVALmP1gMw-SNi7f1xyr6nxAEkv9rUcUR8LqvplFOubgHaalFs7hiiZBtQF7ykpooic7nyhkTFeU0e44SsVI5c4t_D8wLKRKnkAY66x2lTK34qOBmHuu-lEV4WJg6JgWdBHWRNJTtn6w1m8kfra8cAgikFPJOdb3Gg22QNxhEaJUfNADY-SVs0qfbPE4gxpg" alt="Detalle del comedor" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+            </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="rounded-xl overflow-hidden bg-background-dark shadow-xl group fade-in-up delay-200 relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWKRgXldShoj9-HM6vZkaaEtVhC0UhLbbOGWlhegyHyzF_3WfPZm5_dCdDwNDQvm5DU2B_Or1AsD5SA4PHH-UHcnWhlTkModF7ij1Ppe9SpbOv6Bx0UIeRlA-_lO7UoLU_2WjGW-OEAuGi7qzdqqPlo6zzP19mswNnmSOZ8za5J-yhkkqBEtALxQdmAsgmmGrX3URDAi-IUJbEf3LQKPoXuPEzd7GbQ3oviaS5H5lp-D_UB36hIz217huIipgUdMyx5DMuwFPci_o" alt="El Chef emplatando" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+            </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="rounded-xl overflow-hidden bg-background-dark shadow-xl group fade-in-up delay-300 relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa1MztHsQwUZmvBIg9jA2AbUTFMB6TaqbI4PFoZKvfNm04gsyykz-_nmZcJ6ei_mTIh5xDNgkt3X9BAgrmsX2z_Bc9zVsqkucVIqopdInEwxtua7IUiCl27DYGglMddgOoae1EZB3P3oU1zPEFSOATh2w9axq1xPWmRIPm_ixexftwJgfz4Ju34NOO0Z5wfwm3Zn_kxQnmEJqisRrdx76bt0VOa3IbmAuHaur2RTvyQqQH410Q8BzXc6LmIzaIja3YJmUlNzfwC8Y" alt="Postre Llamarada Solar" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-background-dark pt-16 pb-12 px-6 lg:px-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center text-center fade-in-up">
+            <h2 class="serif-heading text-xl font-bold tracking-tight text-white mb-4">Lumina || Arte en un Plato</h2>
+            <p class="text-white/30 text-xs tracking-widest uppercase">© 2024 Lumina Dining. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>

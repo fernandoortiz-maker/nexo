@@ -1,0 +1,24 @@
+<div class="container flex-between">
+    <a href="index.html" class="logo flex-center" style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; color: var(--color-primary);">
+        <span style="color: var(--color-secondary);">Ice</span>Creamy
+        <span style="font-size: 2rem;">🍦</span>
+    </a>
+    
+    <nav class="desktop-nav" style="display: flex;">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="productos.html" class="nav-link">Sabores</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="#contacto" class="btn btn-primary" style="padding: 8px 20px; font-size: 1rem;">Pedido</a>
+    </nav>
+    
+    <!-- Mobile Menu Button (Visible on mobile) -->
+    <button id="mobile-menu-btn" style="display: none; font-size: 1.5rem;">☰</button>
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        .desktop-nav { display: none !important; }
+        #mobile-menu-btn { display: block !important; }
+    }
+</style>
