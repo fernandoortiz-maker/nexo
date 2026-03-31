@@ -6,9 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // NOTA: Si tu repositorio en GitHub se llamará "nexo", y la URL será "https://[tu-usuario].github.io/nexo", 
-  // descomenta y usa el basePath abajo:
-  // basePath: '/nexo',
+  // Descomentado para GitHub Pages
+  basePath: '/nexo',
 };
 
 export default nextConfig;
