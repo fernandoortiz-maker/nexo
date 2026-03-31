@@ -42,7 +42,7 @@ async function getFeaturedProducts() {
         category: 'Plantilla',
         image: image,
         description: `Proyecto web estático para ${title}.`,
-        url: `./proyectos/${name}/index.html`,
+        url: `/nexo/proyectos/${name}/index.html`,
         enDesarrollo
       };
     }));
