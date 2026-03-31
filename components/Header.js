@@ -32,7 +32,7 @@ export default function Header() {
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/" className={styles.logoLink}>
-            <img src="/nexosfera-logo.png" alt="Nexosfera Logo" className={styles.logoImage} />
+            <img src="/nexo/nexosfera-logo.png" alt="Nexosfera Logo" className={styles.logoImage} />
             <span className="gradient-text" style={{ marginLeft: '10px' }}>Nexosfera</span>
           </Link>
         </div>

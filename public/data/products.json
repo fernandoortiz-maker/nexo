@@ -6,7 +6,7 @@
         "price": null,
         "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80",
         "description": "Plantilla profesional para estudios de grabación y producción musical.",
-        "url": "/proyectos/Estudio_musica/index.html"
+        "url": "/nexo/proyectos/Estudio_musica/index.html"
     },
     {
         "id": "Gym",
@@ -15,7 +15,7 @@
         "price": null,
         "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
         "description": "Diseño enérgico para gimnasios y entrenadores personales.",
-        "url": "/proyectos/Gym/index.html"
+        "url": "/nexo/proyectos/Gym/index.html"
     },
     {
         "id": "Heladeria",
@@ -24,7 +24,7 @@
         "price": null,
         "image": "https://images.unsplash.com/photo-1559703248-dcaaec9fab78?w=800&q=80",
         "description": "Sitio web de un local de postres refrescante y visualmente atractivo.",
-        "url": "/proyectos/Heladeria/index.html"
+        "url": "/nexo/proyectos/Heladeria/index.html"
     },
     {
         "id": "Mariscos",
@@ -33,7 +33,7 @@
         "price": null,
         "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&q=80",
         "description": "Un diseño tematizado para restaurantes de mariscos y comida playera.",
-        "url": "/proyectos/Mariscos/index.html"
+        "url": "/nexo/proyectos/Mariscos/index.html"
     },
     {
         "id": "Panaderia",
@@ -42,7 +42,7 @@
         "price": null,
         "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80",
         "description": "Plantilla acogedora para panaderías y reposterías.",
-        "url": "/proyectos/Panaderia/index.html"
+        "url": "/nexo/proyectos/Panaderia/index.html"
     },
     {
         "id": "Pizzeria",
@@ -51,7 +51,7 @@
         "price": null,
         "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80",
         "description": "Diseño veloz y con apetito para ventas de pizza con sistema de menú.",
-        "url": "/proyectos/Pizzeria/index.html"
+        "url": "/nexo/proyectos/Pizzeria/index.html"
     },
     {
         "id": "Restaurante",
@@ -60,6 +60,6 @@
         "price": null,
         "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
         "description": "Elegancia y sabor reunidos en una web corporativa impecable.",
-        "url": "/proyectos/Restaurante/index.html"
+        "url": "/nexo/proyectos/Restaurante/index.html"
     }
 ]

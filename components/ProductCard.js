@@ -6,7 +6,7 @@ export default function ProductCard({ product }) {
 
     return (
         <a 
-            href={isDev ? '#' : (product.url || `/catalogo/${product.id}`)} 
+            href={isDev ? '#' : (product.url || `/nexo/catalogo/${product.id}/`)} 
             className={styles.linkWrapper}
             onClick={(e) => isDev && e.preventDefault()}
             style={isDev ? { cursor: 'not-allowed', opacity: 0.85 } : {}}

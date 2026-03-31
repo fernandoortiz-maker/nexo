@@ -24,9 +24,8 @@ export default function CatalogPage() {
             try {
                 // If using GitHub Pages with a specific base path (e.g. /nombre-repo)
                 // Next.js static export requires prepending the basePath manually in fetch for client components
-                // but since we might just deploy to the root domain or we don't know the exact basePath,
-                // we'll try fetching from the relative root.
-                const res = await fetch('./data/products.json');
+                // We'll fetch from the absolute basePath to avoid 404s in subroutes
+                const res = await fetch('/nexo/data/products.json');
                 if (res.ok) {
                     const data = await res.json();
                     setProducts(data);
