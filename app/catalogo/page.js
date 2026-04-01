@@ -14,6 +14,7 @@ export default function CatalogPage() {
         { id: 'all', name: 'Todas' },
         { id: 'restaurantes', name: 'Restaurantes' },
         { id: 'gimnasios', name: 'Gimnasios' },
+        { id: 'clinicas', name: 'Salud y Clínicas' },
         { id: 'tiendas', name: 'E-commerce' },
         { id: 'corporativos', name: 'Corporativos' },
         { id: 'links', name: 'Bio Links' },

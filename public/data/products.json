@@ -61,5 +61,23 @@
         "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
         "description": "Elegancia y sabor reunidos en una web corporativa impecable.",
         "url": "/nexo/proyectos/Restaurante/index.html"
+    },
+    {
+        "id": "Consultorio_medico",
+        "title": "Santuario Médico",
+        "category": "clinicas",
+        "price": null,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBXun79odfQj3O1e1I5MNXCMAZT_UXm2F226ij0yQUvokAeZWkOuP1i8PFM_ACjy60RvJtqr3oJkE-2RvllSXpqYGto_IR_DDWlWsbZ45Cz8CeoVbUZJRGWNA5U8bgUP4ibd_hpqAs-E-Qhi3fkDO6VrlG2wusJWTsqT1UukHALnwQPd2yM_6e7cWEqnQHnnPd9Fi3TlZj3_j-dlHXLdmyw2cz-VQqzNrNKpYWKAUzQ-cHYd5IwFy2uWEkKPx3WVZNJPfCvlmdYIVsx",
+        "description": "Plantilla integral para clínicas y consultorios con enfoque en atención y calidez.",
+        "url": "/nexo/proyectos/Consultorio_medico/index.html"
+    },
+    {
+        "id": "Consultorio_dental",
+        "title": "Clinical Vitality",
+        "category": "clinicas",
+        "price": null,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKf1aBO7BN4RRqgpLNHxEDc_SmpBJqM0c3eUhbmlrF9gunefwHmjga2o2WULYgRmIY5suo1xFu-kLcMprve87aobkT1eSFjqfriN2p-H4KeV9R4X3puX-Z6dfmrKiswM12iRFlKmxa9qKQ934sLXyhxjPIBINIQ6j2S3LJkB6j3lq5UXR6KmADAxObXqEtCC0vnQ7VIv5WvBrwPd-ylxHnQzv9HnfiOze3uq4ys2TqKlES1qhIXIH779Wdv7EU3G5VGORlS4Z8tV4Q",
+        "description": "Consultorio de odontología con aspecto limpio, avanzado y totalmente profesional.",
+        "url": "/nexo/proyectos/Consultorio_dental/index.html"
     }
 ]
