@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="light" lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Agendar Cita | Clinical Vitality</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: { extend: { colors: { "background": "#f8faf9", "on-primary": "#ffffff", "primary-container": "#12b5b0", "primary": "#006a67", "secondary-container": "#8ff6d0", "on-surface-variant": "#3c4948", "surface": "#f8faf9", "on-background": "#191c1c", "tertiary": "#546067", "on-tertiary": "#ffffff", "surface-container-high": "#e6e9e8", "surface-container-highest": "#e1e3e2", "surface-container-lowest": "#ffffff", "outline-variant": "#bbc9c8", "surface-container": "#eceeed", "surface-container-low": "#f2f4f3", "on-surface": "#191c1c", "outline": "#6c7a78", "on-secondary": "#ffffff", "secondary": "#006c52", "on-secondary-container": "#007257" }, fontFamily: { "headline": ["Plus Jakarta Sans"], "body": ["Manrope"] } } }
+        }
+    </script>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface font-body overflow-x-hidden">
+
+    <!-- Header -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-[0px_4px_24px_rgba(0,106,103,0.08)] h-20">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 md:px-8 h-full">
+            <a href="index.html" class="text-xl md:text-2xl font-extrabold text-[#006A67] font-headline tracking-tight">Clinical Vitality</a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-[#546067] font-medium hover:text-[#006A67] transition-colors" href="index.html">Inicio</a>
+                <a class="text-[#546067] font-medium hover:text-[#006A67] transition-colors" href="tratamientos.html">Tratamientos</a>
+                <a class="text-[#546067] font-medium hover:text-[#006A67] transition-colors" href="equipo.html">Equipo</a>
+                <a class="bg-signature-gradient text-on-primary px-6 py-2.5 rounded-full font-bold border-2 border-[#006A67] shadow-lg" href="citas.html">Agendar</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-primary p-2">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-md z-[60] hidden flex-col items-center justify-center gap-8">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-primary p-2">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <a class="font-headline font-bold text-2xl text-[#546067] hover:text-[#006A67]" href="index.html">Inicio</a>
+        <a class="font-headline font-bold text-2xl text-[#546067] hover:text-[#006A67]" href="tratamientos.html">Tratamientos</a>
+        <a class="font-headline font-bold text-2xl text-[#546067] hover:text-[#006A67]" href="equipo.html">Equipo</a>
+        <a class="bg-signature-gradient text-on-primary px-8 py-4 rounded-full font-bold text-lg mt-4 shadow-lg w-3/4 max-w-xs text-center" href="citas.html">Agendar Cita</a>
+    </div>
+
+    <main class="pt-20">
+        <!-- Page Header -->
+        <section class="py-20 md:py-28 bg-gradient-to-br from-[#006a67] to-[#12b5b0] text-white text-center">
+            <div class="max-w-4xl mx-auto px-6">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-white/20 text-white text-xs font-bold mb-6 tracking-widest uppercase">Tu Sonrisa Comienza Aquí</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold font-headline tracking-tight mb-6">Agenda tu Cita</h1>
+                <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">Un especialista se pondrá en contacto contigo en menos de 2 horas para confirmar tu visita.</p>
+            </div>
+        </section>
+
+        <!-- Formulario + Info -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-6 md:px-8">
+                <div class="bg-surface-container-lowest rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-outline-variant/10">
+
+                    <!-- Info lateral -->
+                    <div class="lg:w-2/5 bg-gradient-to-br from-[#006a67] to-[#00504d] p-8 md:p-12 text-white space-y-10 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-2xl md:text-3xl font-extrabold font-headline mb-4">Estamos para ti</h2>
+                            <p class="text-white/75 leading-relaxed">Ya sea tu primera visita o un seguimiento, nuestro equipo te recibirá con la calidez que mereces.</p>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center flex-shrink-0">
+                                    <span class="material-symbols-outlined text-lg">location_on</span>
+                                </div>
+                                <div>
+                                    <p class="font-bold mb-1">Ubicación</p>
+                                    <p class="text-white/70 text-sm">Av. Presidente Masaryk 123, Polanco, Miguel Hidalgo, CDMX.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center flex-shrink-0">
+                                    <span class="material-symbols-outlined text-lg">schedule</span>
+                                </div>
+                                <div>
+                                    <p class="font-bold mb-1">Horario de Atención</p>
+                                    <p class="text-white/70 text-sm">Lun – Sáb: 9:00 AM – 8:00 PM<br/>Domingos: Solo urgencias</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center flex-shrink-0">
+                                    <span class="material-symbols-outlined text-lg">call</span>
+                                </div>
+                                <div>
+                                    <p class="font-bold mb-1">Teléfono</p>
+                                    <p class="text-white/70 text-sm">+52 (55) 1234-5678</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 pt-4">
+                            <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-xs font-bold">
+                                <span class="material-symbols-outlined text-sm">verified</span> Certificados
+                            </div>
+                            <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-xs font-bold">
+                                <span class="material-symbols-outlined text-sm">star</span> 5 Estrellas
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario -->
+                    <div class="lg:w-3/5 p-8 md:p-12 flex flex-col justify-center">
+                        <h3 class="text-2xl font-extrabold font-headline text-primary mb-8">Completa el formulario</h3>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-on-surface mb-2">Nombre Completo</label>
+                                    <input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 transition-all font-body text-sm" placeholder="Ej. Ana Pérez" type="text"/>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-on-surface mb-2">Correo Electrónico</label>
+                                    <input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 transition-all font-body text-sm" placeholder="ana@ejemplo.com" type="email"/>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-on-surface mb-2">Teléfono</label>
+                                    <input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 transition-all font-body text-sm" placeholder="55 1234 5678" type="tel"/>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-on-surface mb-2">Tratamiento de Interés</label>
+                                    <select class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 transition-all text-on-surface-variant font-body text-sm">
+                                        <option>Ortodoncia Invisible</option>
+                                        <option>Implantes Digitales</option>
+                                        <option>Diseño de Sonrisa</option>
+                                        <option>Blanqueamiento Láser</option>
+                                        <option>Primera Consulta / Diagnóstico</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-on-surface mb-2">Fecha Preferida</label>
+                                    <input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 transition-all font-body text-sm" type="date"/>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-on-surface mb-2">Hora Preferida</label>
+                                    <select class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 transition-all text-on-surface-variant font-body text-sm">
+                                        <option>Mañana (9:00 – 12:00)</option>
+                                        <option>Mediodía (12:00 – 15:00)</option>
+                                        <option>Tarde (15:00 – 20:00)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-on-surface mb-2">Mensaje adicional (opcional)</label>
+                                <textarea class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 transition-all font-body text-sm" rows="3" placeholder="Cuéntanos brevemente el motivo de tu visita o si tienes alguna alergia..."></textarea>
+                            </div>
+                            <button class="w-full bg-signature-gradient text-on-primary py-4 rounded-xl font-bold text-lg hover:scale-[1.01] transition-transform shadow-lg" type="submit">
+                                Solicitar Cita
+                            </button>
+                            <p class="text-xs text-center text-on-surface-variant">Al enviar confirmas que aceptas nuestro Aviso de Privacidad.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#F2F4F3] w-full py-12">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-lg font-bold text-[#006A67] font-headline">Clinical Vitality</div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a class="text-sm text-[#3C4948] hover:text-[#12B5B0] transition-colors font-semibold" href="tratamientos.html">Tratamientos</a>
+                <a class="text-sm text-[#3C4948] hover:text-[#12B5B0] transition-colors font-semibold" href="equipo.html">Equipo</a>
+                <a class="text-sm text-[#3C4948] hover:text-[#12B5B0] transition-colors font-semibold" href="citas.html">Contacto</a>
+            </div>
+            <p class="text-sm text-[#3C4948] text-center">© 2026 Clinical Vitality. Polanco, CDMX.</p>
+        </div>
+    </footer>
+
+    <a href="../../" style="position:fixed;bottom:30px;right:30px;display:flex;align-items:center;justify-content:center;width:50px;height:50px;background-color:#0f172a;color:#ffffff;border-radius:50%;box-shadow:0 10px 15px -3px rgba(0,0,0,0.3);z-index:99999;text-decoration:none;transition:all 0.3s ease;border:2px solid rgba(255,255,255,0.1);"
+       onmouseover="this.style.transform='scale(1.1) translateY(-5px)';this.style.backgroundColor='#1e293b';"
+       onmouseout="this.style.transform='scale(1)';this.style.backgroundColor='#0f172a';" title="Volver al Portafolio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

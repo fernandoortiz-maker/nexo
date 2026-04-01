@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="light" lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Tratamientos | Clinical Vitality</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: { extend: { colors: { "background": "#f8faf9", "on-primary": "#ffffff", "primary-container": "#12b5b0", "primary": "#006a67", "secondary-container": "#8ff6d0", "on-surface-variant": "#3c4948", "surface": "#f8faf9", "on-background": "#191c1c", "on-error": "#ffffff", "tertiary": "#546067", "on-tertiary": "#ffffff", "surface-container-high": "#e6e9e8", "surface-container-highest": "#e1e3e2", "surface-container-lowest": "#ffffff", "outline-variant": "#bbc9c8", "surface-container": "#eceeed", "surface-container-low": "#f2f4f3", "on-surface": "#191c1c", "outline": "#6c7a78", "on-secondary": "#ffffff", "secondary": "#006c52", "on-secondary-container": "#007257" }, fontFamily: { "headline": ["Plus Jakarta Sans"], "body": ["Manrope"] } } }
+        }
+    </script>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface font-body overflow-x-hidden">
+
+    <!-- Header -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-[0px_4px_24px_rgba(0,106,103,0.08)] h-20">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 md:px-8 h-full">
+            <a href="index.html" class="text-xl md:text-2xl font-extrabold text-[#006A67] font-headline tracking-tight">Clinical Vitality</a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-[#546067] font-medium hover:text-[#006A67] transition-colors" href="index.html">Inicio</a>
+                <a class="text-[#006A67] font-bold border-b-2 border-[#006A67] pb-0.5" href="tratamientos.html">Tratamientos</a>
+                <a class="text-[#546067] font-medium hover:text-[#006A67] transition-colors" href="equipo.html">Equipo</a>
+                <a class="bg-signature-gradient text-on-primary px-6 py-2.5 rounded-full font-bold hover:scale-105 active:scale-95 duration-300 shadow-lg" href="citas.html">Agendar</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-primary p-2">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-md z-[60] hidden flex-col items-center justify-center gap-8">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-primary p-2">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <a class="font-headline font-bold text-2xl text-[#546067] hover:text-[#006A67]" href="index.html">Inicio</a>
+        <a class="font-headline font-bold text-2xl text-[#006A67]" href="tratamientos.html">Tratamientos</a>
+        <a class="font-headline font-bold text-2xl text-[#546067] hover:text-[#006A67]" href="equipo.html">Equipo</a>
+        <a class="bg-signature-gradient text-on-primary px-8 py-4 rounded-full font-bold text-lg mt-4 shadow-lg w-3/4 max-w-xs text-center" href="citas.html">Agendar Cita</a>
+    </div>
+
+    <main class="pt-20">
+        <!-- Page Header -->
+        <section class="py-20 md:py-28 bg-gradient-to-br from-[#006a67] to-[#12b5b0] text-white text-center">
+            <div class="max-w-4xl mx-auto px-6">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-white/20 text-white text-xs font-bold mb-6 tracking-widest uppercase">Nuestros Servicios</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold font-headline tracking-tight mb-6">Tratamientos de Vanguardia</h1>
+                <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">Cada tratamiento es una obra de arte personalizada con la más avanzada tecnología dental disponible en México.</p>
+            </div>
+        </section>
+
+        <!-- Tratamientos Grid -->
+        <section class="py-24 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto px-6 md:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- 1. Ortodoncia -->
+                    <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group">
+                        <div class="h-48 bg-gradient-to-br from-secondary-container/40 to-secondary-container/10 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-7xl text-primary">flare</span>
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold text-primary bg-secondary-container/40 px-3 py-1 rounded-full uppercase tracking-wider">Estética</span>
+                            <h2 class="text-2xl font-extrabold font-headline text-primary mt-4 mb-3">Ortodoncia Invisible</h2>
+                            <p class="text-tertiary leading-relaxed mb-6">Alinea tu sonrisa de forma discreta con alineadores transparentes de última generación. Sin brackets, sin incomodidades, sin pausas en tu vida.</p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Totalmente transparentes e invisibles
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Removibles para comer y cepillarte
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Resultados visibles desde el mes 3
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Simulación digital antes de comenzar
+                                </li>
+                            </ul>
+                            <div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+                                <div>
+                                    <p class="text-xs text-tertiary">Duración estimada</p>
+                                    <p class="font-bold text-on-surface">12 – 24 meses</p>
+                                </div>
+                                <a href="citas.html" class="bg-signature-gradient text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Implantes -->
+                    <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group">
+                        <div class="h-48 bg-gradient-to-br from-[#006a67]/10 to-[#006a67]/30 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-7xl text-primary">precision_manufacturing</span>
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold text-primary bg-secondary-container/40 px-3 py-1 rounded-full uppercase tracking-wider">Restauración</span>
+                            <h2 class="text-2xl font-extrabold font-headline text-primary mt-4 mb-3">Implantes Digitales</h2>
+                            <p class="text-tertiary leading-relaxed mb-6">La solución más duradera para dientes perdidos, guiada por tecnología 3D de precisión milimétrica que garantiza el resultado perfecto.</p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Planificación digital previa en 3D
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Titanio biocompatible de alta calidad
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Mínima invasión y recuperación rápida
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Garantía de por vida en la estructura
+                                </li>
+                            </ul>
+                            <div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+                                <div>
+                                    <p class="text-xs text-tertiary">Duración estimada</p>
+                                    <p class="font-bold text-on-surface">2 – 4 sesiones</p>
+                                </div>
+                                <a href="citas.html" class="bg-signature-gradient text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Estética Dental -->
+                    <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group">
+                        <div class="h-48 bg-gradient-to-br from-secondary-container/30 to-primary-container/20 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-7xl text-primary">face</span>
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold text-primary bg-secondary-container/40 px-3 py-1 rounded-full uppercase tracking-wider">Estética</span>
+                            <h2 class="text-2xl font-extrabold font-headline text-primary mt-4 mb-3">Diseño de Sonrisa</h2>
+                            <p class="text-tertiary leading-relaxed mb-6">Transformamos tu sonrisa desde cero con carillas de porcelana de aspecto absolutamente natural. Un resultado que parece mágico pero es pura ciencia.</p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Simulación digital de tu sonrisa final
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Carillas de porcelana ultradelgada
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Corrección de forma, color y tamaño
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Duración de 10 a 20 años
+                                </li>
+                            </ul>
+                            <div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+                                <div>
+                                    <p class="text-xs text-tertiary">Duración estimada</p>
+                                    <p class="font-bold text-on-surface">3 – 5 sesiones</p>
+                                </div>
+                                <a href="citas.html" class="bg-signature-gradient text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Blanqueamiento -->
+                    <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group">
+                        <div class="h-48 bg-gradient-to-br from-[#12b5b0]/10 to-[#12b5b0]/30 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-7xl text-primary">light_mode</span>
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold text-primary bg-secondary-container/40 px-3 py-1 rounded-full uppercase tracking-wider">Express</span>
+                            <h2 class="text-2xl font-extrabold font-headline text-primary mt-4 mb-3">Blanqueamiento Láser</h2>
+                            <p class="text-tertiary leading-relaxed mb-6">Dientes hasta 8 tonos más blancos en una sola visita. Tecnología de luz fría LED completamente indolora y sin sensibilidad post-tratamiento.</p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Resultados inmediatos en 1 sesión
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Sin dolor ni sensibilidad dental
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Hasta 8 tonos de diferencia
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-on-surface-variant">
+                                    <span class="material-symbols-outlined-fill text-primary">check_circle</span> Kit de mantenimiento incluido
+                                </li>
+                            </ul>
+                            <div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+                                <div>
+                                    <p class="text-xs text-tertiary">Duración estimada</p>
+                                    <p class="font-bold text-on-surface">90 minutos</p>
+                                </div>
+                                <a href="citas.html" class="bg-signature-gradient text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-24 bg-background text-center">
+            <div class="max-w-3xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-extrabold font-headline text-primary mb-4">¿No sabes qué tratamiento necesitas?</h2>
+                <p class="text-lg text-tertiary mb-10">Agenda una consulta de diagnóstico sin costo. Nuestros especialistas analizarán tu caso y diseñarán el plan perfecto para ti.</p>
+                <a href="citas.html" class="inline-block bg-signature-gradient text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl">
+                    Agendar Diagnóstico Gratuito
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#F2F4F3] w-full py-12">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-lg font-bold text-[#006A67] font-headline">Clinical Vitality</div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a class="text-sm text-[#3C4948] hover:text-[#12B5B0] transition-colors font-semibold" href="tratamientos.html">Tratamientos</a>
+                <a class="text-sm text-[#3C4948] hover:text-[#12B5B0] transition-colors font-semibold" href="equipo.html">Equipo</a>
+                <a class="text-sm text-[#3C4948] hover:text-[#12B5B0] transition-colors font-semibold" href="citas.html">Contacto</a>
+            </div>
+            <p class="text-sm text-[#3C4948] text-center">© 2026 Clinical Vitality. Polanco, CDMX.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante Volver al Portafolio -->
+    <a href="../../"
+       style="position:fixed;bottom:30px;right:30px;display:flex;align-items:center;justify-content:center;width:50px;height:50px;background-color:#0f172a;color:#ffffff;border-radius:50%;box-shadow:0 10px 15px -3px rgba(0,0,0,0.3);z-index:99999;text-decoration:none;transition:all 0.3s ease;border:2px solid rgba(255,255,255,0.1);"
+       onmouseover="this.style.transform='scale(1.1) translateY(-5px)';this.style.backgroundColor='#1e293b';"
+       onmouseout="this.style.transform='scale(1)';this.style.backgroundColor='#0f172a';"
+       title="Volver al Portafolio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

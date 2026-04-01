@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="light" lang="es-MX">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Especialidades | Santuario Médico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: { extend: { colors: { "secondary-fixed": "#d4e6e5", "surface-container-lowest": "#ffffff", "secondary-container": "#d4e6e5", "on-secondary": "#ffffff", "primary": "#00478d", "on-background": "#191c1d", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-container-high": "#e7e8e9", "surface-container-highest": "#e1e3e4", "on-surface-variant": "#424752", "secondary": "#516161", "on-primary-container": "#c8daff", "surface": "#f8f9fa", "error": "#ba1a1a", "outline-variant": "#c2c6d4", "outline": "#727783", "primary-fixed-dim": "#a9c7ff", "primary-container": "#005eb8", "primary-fixed": "#d6e3ff", "on-surface": "#191c1d", "surface-container": "#edeeef", "surface-container-low": "#f3f4f5", "background": "#f8f9fa", "tertiary": "#08531e", "tertiary-container": "#286c34", "tertiary-fixed": "#abf4ac", "on-tertiary-container": "#a3eba4" }, fontFamily: { "headline": ["Manrope"], "body": ["Inter"] } } }
+        }
+    </script>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body overflow-x-hidden">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="flex justify-between items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
+            <a href="index.html" class="text-xl font-bold tracking-tighter text-blue-900 font-headline">Santuario Médico</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="font-headline font-bold text-sm text-slate-600 hover:text-blue-700 transition-colors" href="index.html">Inicio</a>
+                <a class="font-headline font-bold text-sm text-blue-700 border-b-2 border-blue-700" href="especialidades.html">Especialidades</a>
+                <a class="font-headline font-bold text-sm text-slate-600 hover:text-blue-700 transition-colors" href="equipo.html">Equipo</a>
+                <a href="citas.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-headline font-bold text-sm hover:opacity-90 active:scale-95 transition-all shadow-lg">Agendar Cita</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-on-surface">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-md z-[60] hidden flex-col items-center justify-center gap-8">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-on-surface">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <a class="font-headline font-bold text-2xl text-slate-600 hover:text-blue-700" href="index.html">Inicio</a>
+        <a class="font-headline font-bold text-2xl text-blue-700" href="especialidades.html">Especialidades</a>
+        <a class="font-headline font-bold text-2xl text-slate-600 hover:text-blue-700" href="equipo.html">Equipo</a>
+        <a href="citas.html" class="bg-primary text-on-primary px-8 py-3 rounded-xl font-headline font-bold text-lg mt-4 shadow-lg w-3/4 max-w-xs text-center">Agendar Cita</a>
+    </div>
+
+    <main class="pt-20">
+        <!-- Page Header -->
+        <section class="py-20 md:py-28 bg-gradient-to-br from-[#00478d] to-[#005eb8] text-white text-center">
+            <div class="max-w-4xl mx-auto px-6">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-white/20 text-white text-xs font-bold mb-6 tracking-widest uppercase">Servicios Médicos</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold font-headline tracking-tight mb-6">Nuestras Especialidades</h1>
+                <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">Un enfoque multidisciplinario para cuidar cada aspecto de tu bienestar y el de tu familia.</p>
+            </div>
+        </section>
+
+        <!-- Especialidades -->
+        <section class="py-24 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto px-6 md:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- Medicina General -->
+                    <div class="bg-surface-container-lowest rounded-3xl p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-500 group border border-outline-variant/10">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">home_health</span>
+                        </div>
+                        <h2 class="text-2xl font-headline font-bold text-on-background mb-3">Medicina General</h2>
+                        <p class="text-on-surface-variant leading-relaxed mb-6">Tu primer punto de contacto para la prevención, diagnóstico y tratamiento integral de enfermedades comunes. Atendemos desde un resfriado hasta la gestión de enfermedades crónicas.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Chequeos médicos anuales</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Gestión de enfermedades crónicas</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Prescripción y seguimiento de tratamientos</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Referencia a especialistas cuando se requiere</li>
+                        </ul>
+                        <a href="citas.html" class="inline-block bg-primary text-on-primary px-6 py-3 rounded-xl font-bold text-sm hover:opacity-90 transition-opacity shadow">Agendar consulta</a>
+                    </div>
+
+                    <!-- Pediatría -->
+                    <div class="bg-surface-container-lowest rounded-3xl p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-500 group border border-outline-variant/10">
+                        <div class="w-14 h-14 rounded-2xl bg-tertiary/10 flex items-center justify-center text-tertiary mb-6 group-hover:bg-tertiary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">child_care</span>
+                        </div>
+                        <h2 class="text-2xl font-headline font-bold text-on-background mb-3">Pediatría</h2>
+                        <p class="text-on-surface-variant leading-relaxed mb-6">Cuidado especializado y delicado para los más pequeños de la familia, desde recién nacidos hasta adolescentes. Nuestros pediatras crean un ambiente de confianza y alegría.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Control de niño sano y vacunación</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Enfermedades infantiles comunes</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Evaluación del desarrollo psicomotriz</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Orientación a padres y cuidadores</li>
+                        </ul>
+                        <a href="citas.html" class="inline-block bg-tertiary text-on-tertiary px-6 py-3 rounded-xl font-bold text-sm hover:opacity-90 transition-opacity shadow">Agendar consulta</a>
+                    </div>
+
+                    <!-- Ginecología -->
+                    <div class="bg-surface-container-lowest rounded-3xl p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-500 group border border-outline-variant/10">
+                        <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">female</span>
+                        </div>
+                        <h2 class="text-2xl font-headline font-bold text-on-background mb-3">Ginecología</h2>
+                        <p class="text-on-surface-variant leading-relaxed mb-6">Atención integral, empática y personalizada para la salud femenina en todas las etapas de la vida. Un espacio seguro, privado y de total confianza para la mujer.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Consultas y revisiones anuales</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Control prenatal y embarazo de alto riesgo</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Planificación familiar e anticoncepción</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Colposcopía y estudios especializados</li>
+                        </ul>
+                        <a href="citas.html" class="inline-block bg-secondary text-on-secondary px-6 py-3 rounded-xl font-bold text-sm hover:opacity-90 transition-opacity shadow">Agendar consulta</a>
+                    </div>
+
+                    <!-- Nutrición -->
+                    <div class="bg-surface-container-lowest rounded-3xl p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-500 group border border-outline-variant/10">
+                        <div class="w-14 h-14 rounded-2xl bg-tertiary/10 flex items-center justify-center text-tertiary mb-6 group-hover:bg-tertiary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">nutrition</span>
+                        </div>
+                        <h2 class="text-2xl font-headline font-bold text-on-background mb-3">Nutrición Clínica</h2>
+                        <p class="text-on-surface-variant leading-relaxed mb-6">Planes de alimentación personalizados, científicamente respaldados para mejorar tu metabolismo, composición corporal y calidad de vida de manera sostenible.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Análisis de composición corporal</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Plan alimenticio personalizado y adaptable</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Dietas para condiciones crónicas (diabetes, hipertensión)</li>
+                            <li class="flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span> Seguimiento y ajuste mensual del plan</li>
+                        </ul>
+                        <a href="citas.html" class="inline-block bg-tertiary text-on-tertiary px-6 py-3 rounded-xl font-bold text-sm hover:opacity-90 transition-opacity shadow">Agendar consulta</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-24 bg-background text-center">
+            <div class="max-w-3xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-extrabold font-headline text-primary mb-4">Agenda tu primera cita hoy</h2>
+                <p class="text-lg text-on-surface-variant mb-10">Contamos con disponibilidad inmediata. Un especialista te atenderá con la calidez que mereces.</p>
+                <a href="citas.html" class="inline-block bg-primary text-on-primary px-10 py-4 rounded-xl font-bold text-lg hover:opacity-90 active:scale-[0.99] transition-all shadow-xl">
+                    Agendar mi Consulta
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-100">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 px-6 md:px-12 py-12 w-full max-w-7xl mx-auto text-center md:text-left">
+            <div class="font-bold text-blue-900 font-headline text-lg">Santuario Médico</div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a class="text-sm text-slate-500 hover:text-blue-600 font-medium" href="especialidades.html">Especialidades</a>
+                <a class="text-sm text-slate-500 hover:text-blue-600 font-medium" href="equipo.html">Equipo</a>
+                <a class="text-sm text-slate-500 hover:text-blue-600 font-medium" href="citas.html">Contacto</a>
+            </div>
+            <p class="text-sm text-slate-500">© 2026 Santuario Médico. Del Valle Norte, CDMX.</p>
+        </div>
+    </footer>
+
+    <a href="../../" style="position:fixed;bottom:30px;right:30px;display:flex;align-items:center;justify-content:center;width:50px;height:50px;background-color:#0f172a;color:#ffffff;border-radius:50%;box-shadow:0 10px 15px -3px rgba(0,0,0,0.3);z-index:99999;text-decoration:none;transition:all 0.3s ease;border:2px solid rgba(255,255,255,0.1);"
+       onmouseover="this.style.transform='scale(1.1) translateY(-5px)';this.style.backgroundColor='#1e293b';"
+       onmouseout="this.style.transform='scale(1)';this.style.backgroundColor='#0f172a';" title="Volver al Portafolio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
